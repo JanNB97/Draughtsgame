@@ -24,6 +24,14 @@ public class TestMyBoard
         //Try jump
         assertRightMove(board, new Move(2, 5, 0, 3, Direction.LEFT));
         Assert.assertNull(board.getPiece(1, 4));
+
+        assertRightMove(board, new Move(0, 3, 1, 2, Direction.LEFT));
+        assertRightMove(board, new Move(4, 5, 3, 4, Direction.LEFT));
+
+        //Try double jump
+        assertRightMove(board, new Move(0, 1, 4, 5, Direction.LEFT));
+        Assert.assertNull(board.getPiece(1, 2));
+        Assert.assertNull(board.getPiece(3, 4));
     }
 
     private void assertRightMove(Board board, Move move)
