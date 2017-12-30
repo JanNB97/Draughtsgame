@@ -37,7 +37,7 @@ public class MyBoard implements Board
         }
     }
 
-    public MyBoard(MyBoard board)
+    public MyBoard(Board board)
     {
         for(int i = 0; i < 8; i++)
         {
