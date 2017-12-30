@@ -298,7 +298,7 @@ public class MyBoard implements Board
             return left;
         }
         else if(right != null && left != null && direction == Direction.RIGHT
-                || right != null && left != null)
+                || right != null && left == null)
         {
             return right;
         }
@@ -329,55 +329,46 @@ public class MyBoard implements Board
             return null;
         }
 
-        if(owner == Owner.NP)
-        {
-            //moves up
-            ArrayList<Piece> right = getManJumpVictimsSearch(direction, owner, newXPos, newYPos, newXPos + 2, newYPos - 2, destX, destY);
-            ArrayList<Piece> left = getManJumpVictimsSearch(direction, owner, newXPos, newYPos, newXPos - 2, newYPos - 2, destX, destY);
 
-            if(right != null && left != null && direction == Direction.LEFT
-                    || right == null && left != null)
-            {
-                left.add(getPiece(newXPos + 1, newYPos + 1));
-                return left;
-            }
-            else if(right != null && left != null && direction == Direction.RIGHT
-                    || right != null && left != null)
-            {
-                right.add(getPiece(newXPos - 1, newYPos + 1));
-                return right;
-            }
-            else
-            {
-                return null;
-            }
-        }
-        else if(owner == Owner.PERSON)
+        if(owner == Owner.PERSON)
         {
             //moves down
-            ArrayList<Piece> right = getManJumpVictimsSearch(direction, owner, newXPos, newYPos, newXPos + 2, newYPos + 2, destX, destY);
-            ArrayList<Piece> left = getManJumpVictimsSearch(direction, owner, newXPos, newYPos, newXPos - 2, newYPos + 2, destX, destY);
+            ArrayList<Piece> left = getManJumpVictimsSearch(direction, owner, newXPos, newYPos, newXPos + 2, newYPos + 2, destX, destY);
+            ArrayList<Piece> right = getManJumpVictimsSearch(direction, owner, newXPos, newYPos, newXPos - 2, newYPos + 2, destX, destY);
 
-            if(right != null && left != null && direction == Direction.LEFT
-                    || right == null && left != null)
-            {
-                left.add(getPiece(newXPos - 1, newYPos - 1));
-                return left;
-            }
-            else if(right != null && left != null && direction == Direction.RIGHT
-                    || right != null && left != null)
-            {
-                right.add(getPiece(newXPos + 1, newYPos - 1));
-                return right;
-            }
-            else
-            {
-                return null;
-            }
+            return selectArrayListSearch(left, right, direction, xPos, yPos, newXPos, newYPos);
+        }
+        else if(owner == Owner.NP)
+        {
+            //moves up
+            ArrayList<Piece> left = getManJumpVictimsSearch(direction, owner, newXPos, newYPos, newXPos - 2, newYPos - 2, destX, destY);
+            ArrayList<Piece> right = getManJumpVictimsSearch(direction, owner, newXPos, newYPos, newXPos + 2, newYPos - 2, destX, destY);
+
+            return selectArrayListSearch(left, right, direction, xPos, yPos, newXPos, newYPos);
         }
         else
         {
             Logger.getGlobal().severe("No owner selected");
+            return null;
+        }
+    }
+
+    private ArrayList<Piece> selectArrayListSearch(ArrayList<Piece> left, ArrayList<Piece> right, Direction direction, int xPos, int yPos, int newXPos, int newYPos)
+    {
+        if(right != null && left != null && direction == Direction.LEFT
+                || right == null && left != null)
+        {
+            left.add(getPiece((xPos + newXPos) / 2, (yPos + newYPos) / 2));
+            return left;
+        }
+        else if(right != null && left != null && direction == Direction.RIGHT
+                || right != null && left == null)
+        {
+            right.add(getPiece((xPos + newXPos) / 2, (yPos + newYPos) / 2));
+            return right;
+        }
+        else
+        {
             return null;
         }
     }
