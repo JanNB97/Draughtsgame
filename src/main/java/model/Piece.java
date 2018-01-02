@@ -3,7 +3,7 @@ package model;
 import model.enums.Owner;
 import model.enums.Type;
 
-public class Piece
+public class Piece implements Comparable<Piece>
 {
     private Owner owner;
     private Type type;
@@ -65,6 +65,25 @@ public class Piece
         else
         {
             return false;
+        }
+    }
+
+    @Override
+    public String toString()
+    {
+        return "(" + xPos + "," + yPos + ")";
+    }
+
+    @Override
+    public int compareTo(Piece o)
+    {
+        if(yPos != o.getyPos())
+        {
+            return yPos - o.getyPos();
+        }
+        else
+        {
+            return xPos - o.getxPos();
         }
     }
 }

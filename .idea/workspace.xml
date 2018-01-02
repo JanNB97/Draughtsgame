@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda81767-1980-4071-b852-ff94412a97e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/MyBoard.java" afterPath="$PROJECT_DIR$/src/main/java/model/MyBoard.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/Board.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/MyBoard$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/MyBoard.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/Piece.class" afterPath="$PROJECT_DIR$/out/production/classes/model/Piece.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/TestMyBoard.class" afterPath="$PROJECT_DIR$/out/test/classes/TestMyBoard.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Board.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Move.java" afterPath="$PROJECT_DIR$/src/main/java/model/Move.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/MyBoard.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Piece.java" afterPath="$PROJECT_DIR$/src/main/java/model/Piece.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestMyBoard.java" afterPath="$PROJECT_DIR$/src/test/java/TestMyBoard.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,6 +24,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Draughtsgame$TestMyBoard.coverage" NAME="TestMyBoard Coverage Results" MODIFIED="1514913280785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -22,51 +34,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyBoard.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/MyBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
-              <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-                <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestMyBoard.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestMyBoard.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestMyBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="316">
+              <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#testScenarioOne#0;class#TestMyBoard#0" expanded="false" />
+                <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+                <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
                 <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
                 <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Move.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Move.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -390,9 +369,10 @@
         <option value="$PROJECT_DIR$/src/main/java/model/enums/Type.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/enums/Direction.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Move.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Piece.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/MyBoard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/board/KingMaster.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestMyBoard.java" />
       </list>
     </option>
@@ -404,8 +384,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="366" />
-    <option name="y" value="-25" />
+    <option name="x" value="202" />
+    <option name="y" value="-11" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -424,10 +404,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -467,10 +446,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,6 +467,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Samsung\OneDrive\Informatik\Programming\IntelliProjekte\MyGames\DraughtsgameGit\Draughtsgame\src\main\java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -622,44 +614,49 @@
       <workItem from="1514630745042" duration="601000" />
       <workItem from="1514632113272" duration="258000" />
       <workItem from="1514632589592" duration="3996000" />
-      <workItem from="1514641428730" duration="2344000" />
+      <workItem from="1514641428730" duration="4366000" />
+      <workItem from="1514730456361" duration="657000" />
+      <workItem from="1514798877763" duration="3000" />
+      <workItem from="1514799830565" duration="782000" />
+      <workItem from="1514912872683" duration="37000" />
+      <workItem from="1514913047796" duration="449000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 14m 08s.xml">
+    <history-entry file="TestMyBoard - 2017.12.30 at 15h 50m 55s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 15m 20s.xml">
+    <history-entry file="TestMyBoard - 2017.12.30 at 15h 52m 33s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 17m 28s.xml">
+    <history-entry file="TestMyBoard - 2017.12.30 at 15h 54m 17s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 19m 06s.xml">
+    <history-entry file="TestMyBoard - 2017.12.30 at 15h 56m 11s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 19m 32s.xml">
+    <history-entry file="TestMyBoard - 2017.12.30 at 15h 57m 21s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 19m 53s.xml">
+    <history-entry file="TestMyBoard - 2018.01.02 at 18h 14m 13s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 20m 13s.xml">
+    <history-entry file="TestMyBoard - 2018.01.02 at 18h 14m 38s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 21m 07s.xml">
+    <history-entry file="TestMyBoard - 2018.01.02 at 18h 14m 42s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 22m 10s.xml">
+    <history-entry file="TestMyBoard - 2018.01.02 at 18h 16m 49s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestMyBoard - 2017.12.30 at 15h 22m 23s.xml">
+    <history-entry file="TestMyBoard - 2018.01.02 at 18h 17m 44s.xml">
       <configuration name="TestMyBoard" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28266000" />
+    <option name="totallyTimeSpent" value="32216000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -672,7 +669,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3921162" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -682,12 +678,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.54875517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28941908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4159751" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13006397" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14658849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20309168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -713,7 +710,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="39" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -722,21 +719,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestMyBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="69" lean-forward="true" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/MyBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -746,7 +767,8 @@
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testScenarioOne#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
           </folding>
@@ -757,21 +779,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +789,8 @@
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testScenarioOne#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
           </folding>
@@ -792,21 +801,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -816,7 +811,8 @@
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testScenarioOne#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
           </folding>
@@ -827,21 +823,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -851,7 +833,8 @@
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testScenarioOne#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
           </folding>
@@ -862,21 +845,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="294" column="4" lean-forward="false" selection-start-line="294" selection-start-column="4" selection-end-line="294" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -900,6 +869,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Piece#0;class#Piece#0" expanded="false" />
+            <element signature="method#equals#0;class#Piece#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -909,7 +883,8 @@
           <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testScenarioOne#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
           </folding>
@@ -920,21 +895,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -944,7 +905,8 @@
           <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testScenarioOne#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
           </folding>
@@ -963,6 +925,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Piece#0;class#Piece#0" expanded="false" />
+            <element signature="method#equals#0;class#Piece#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -978,21 +945,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,7 +955,8 @@
           <caret line="17" column="67" lean-forward="false" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testScenarioOne#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
           </folding>
@@ -1029,6 +983,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Piece#0;class#Piece#0" expanded="false" />
+            <element signature="method#equals#0;class#Piece#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,21 +995,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,6 +1011,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Piece#0;class#Piece#0" expanded="false" />
+            <element signature="method#equals#0;class#Piece#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1107,21 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Piece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1150,45 +1085,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2338">
+          <caret line="529" column="32" lean-forward="true" selection-start-line="529" selection-start-column="32" selection-end-line="529" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/MyBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="247" column="5" lean-forward="false" selection-start-line="247" selection-start-column="5" selection-end-line="247" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Move.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enums/KingDirection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Piece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Piece#0;class#Piece#0" expanded="false" />
+            <element signature="method#equals#0;class#Piece#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/board/KingMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/board/MyBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="66" column="8" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestMyBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="316">
+          <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testScenarioOne#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testManJump#0;class#TestMyBoard#0" expanded="false" />
+            <element signature="method#testKingJumpSzenario1#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertRightMove#0;class#TestMyBoard#0" expanded="false" />
             <element signature="method#assertWrongMove#0;class#TestMyBoard#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/MyBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
           </folding>
         </state>
       </provider>
