@@ -31,6 +31,9 @@ public class TestMyBoard
         Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 1, 0)));
         Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 5, 6)));
         Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 7, 2)));
+
+        board.doMove(new Move(3, 4, 3, 6));
+        System.out.println(board.toString());
     }
 
     @Test

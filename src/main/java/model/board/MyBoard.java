@@ -161,11 +161,24 @@ public class MyBoard implements Board
     @Override
     public void doMove(Move move)
     {
-        ArrayList<Piece> victims = manMaster.getManJumpVictims(move);
-
-        //Set piece
         Piece piece = getPiece(move.getxPos(), move.getyPos());
 
+        ArrayList<Piece> victims;
+        if(piece.getType() == Type.MAN)
+        {
+            victims = manMaster.getManJumpVictims(move);
+        }
+        else if(piece.getType() == Type.KING)
+        {
+            victims = kingMaster.getKingJumpVictims(move);
+        }
+        else
+        {
+            Logger.getGlobal().severe("No type selected");
+            victims = null;
+        }
+
+        //Set piece
         board[piece.getyPos()][piece.getxPos()] = null;
 
         piece.setxPos(move.getNewXPos());
