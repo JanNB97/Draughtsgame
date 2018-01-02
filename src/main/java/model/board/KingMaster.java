@@ -260,11 +260,14 @@ public class KingMaster
 				Logger.getGlobal().severe("No kingDirection selected");
 				break;
     		}
-    		
-			Piece piece = board.getPiece(x, y);
-			if(piece != null && jumpedPieces.contains(new Position(x, y)) == false)
-			{
-				return piece;
+
+    		if(x >= 0 && x <= 7 && y >= 0 && y <= 7)
+    		{
+				Piece piece = board.getPiece(x, y);
+				if (piece != null && jumpedPieces.contains(new Position(x, y)) == false)
+				{
+					return piece;
+				}
 			}
     	}
     	

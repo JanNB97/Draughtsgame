@@ -20,11 +20,17 @@ public class TestMyBoard
         board.setOnBoard(Owner.PERSON, Type.MAN, 5, 2, 4, 5);
         board.setOnBoard(Owner.NP, Type.KING, 3, 4);
 
-        System.out.println(board.toString());
-
         //Try to move with king
         Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 6, 1)));
         Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 5, 6)));
+
+        board.setOnBoard(Owner.PERSON, Type.MAN, 2, 3, 2, 1);
+        System.out.println(board.toString());
+
+        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 3, 6)));
+        Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 1, 0)));
+        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 5, 6)));
+        Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 7, 2)));
     }
 
     @Test
@@ -170,7 +176,7 @@ public class TestMyBoard
         Assert.assertEquals(board.getPiece(3, 0).getType(), Type.KING);
 
         //Try to move king
-        board.isPossibleMove(new Move(3, 0, 5, 2));
+        Assert.assertTrue(board.isPossibleMove(new Move(3, 0, 5, 2)));
     }
 
     private void assertRightMove(Board board, Move move)
