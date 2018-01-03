@@ -138,7 +138,7 @@ public class MyBoard implements Board
         int newYPos = move.getNewYPos();
 
         if(newXPos < 0 || newXPos > 7 || newYPos < 0 || newYPos > 7
-                || getPiece(newXPos, newYPos) != null)
+                || (getPiece(newXPos, newYPos) != null && getPiece(newXPos, newYPos).getType() != Type.KING))
         {
             return false;
         }
@@ -255,13 +255,13 @@ public class MyBoard implements Board
         return builder.toString();
     }
 
-    //----------------------------------------------------------------------------------------------------------//TESTING
+    //-----------------------------------------------------------------------------------------------//TESTING
     private void setPiece(Piece piece)
     {
     	board[piece.getyPos()][piece.getxPos()] = piece;
     }
     
-    private void clearPiece(int xPos, int yPos)
+    public void clearPiece(int xPos, int yPos)
     {
     	board[yPos][xPos] = null;
     }
