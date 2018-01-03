@@ -21,17 +21,17 @@ public class KingMaster
 
 	boolean isPossibleKingMove(Move move)
 	{
+		Piece piece = board.getPiece(move.getxPos(), move.getyPos());
+		Owner owner = piece.getOwner();
+
 		//Try to reach direct
-		if(isDirectReachable(new TreeSet<>(), move))
+		if(isDirectReachable(new TreeSet<>(), move) && couldStillJump(move.getxPos(), move.getyPos(), new TreeSet<>(), owner) == false)
 		{
 			return true;
 		}
 		else
 		{
 			//Try to jump in all four directions
-			Piece piece = board.getPiece(move.getxPos(), move.getyPos());
-			Owner owner = piece.getOwner();
-
 			board.clearPiece(piece.getxPos(), piece.getyPos());
 
 			boolean b1 = jumpToDestination(new TreeSet<>(), owner, KingDirection.NORTHEAST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true).bool();
@@ -180,20 +180,32 @@ public class KingMaster
 	}
 	private boolean isDirectReachable(TreeSet<Position> jumpedPieces, Move move)
 	{
+		if(move.getKingDirection() == KingDirection.NONE)
+		{
+			return false;
+		}
+
 		if(isOnDiagonale(move))
 		{
 			Piece nextStone = getNextStone(jumpedPieces, move.getxPos(), move.getyPos(), move.getKingDirection());
 			
-			int disToNextStone = distance(move.getxPos(), move.getyPos(), nextStone.getxPos(), nextStone.getyPos());
-			int disToDestination = distance(move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos());
-			
-			if(disToDestination < disToNextStone)
+			if(nextStone != null)
 			{
-				return true;
+				int disToNextStone = distance(move.getxPos(), move.getyPos(), nextStone.getxPos(), nextStone.getyPos());
+				int disToDestination = distance(move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos());
+
+				if(disToDestination < disToNextStone)
+				{
+					return true;
+				}
+				else
+				{
+					return false;
+				}
 			}
 			else
 			{
-				return false;
+				return true;
 			}
 		}
 		else
@@ -246,7 +258,7 @@ public class KingMaster
     			break;
 			default:
 				Logger.getGlobal().severe("No kingDirection selected");
-				break;
+				return null;
     		}
 
     		if(x >= 0 && x <= 7 && y >= 0 && y <= 7)

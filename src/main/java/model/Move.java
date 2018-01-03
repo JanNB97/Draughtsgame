@@ -47,8 +47,7 @@ public class Move
         	if(y == 0)
         	{
         		//NOWHERE
-        		Logger.getGlobal().severe("Move does no movement");
-        		kingDirection = KingDirection.NORTH;
+        		kingDirection = KingDirection.NONE;
         	}
         	else if(y > 0)
         	{

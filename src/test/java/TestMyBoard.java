@@ -12,85 +12,9 @@ import org.junit.Test;
 public class TestMyBoard
 {
     @Test
-    public void testKingJumpSzenario2()
+    public void testManJumpSzenario1()
     {
         MyBoard board = new MyBoard();
-
-        board.clearBoard();
-        board.setOnBoard(Owner.PERSON, Type.MAN, 5, 2, 4, 5);
-        board.setOnBoard(Owner.NP, Type.KING, 3, 4);
-        System.out.println(board.toString());
-
-        //Try to move with king
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 6, 1)));
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 5, 6)));
-
-        board.setOnBoard(Owner.PERSON, Type.MAN, 2, 3, 2, 1);
-        System.out.println("FIRST: \n" + board.toString());
-
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 3, 6)));
-        Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 1, 0)));
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 5, 6)));
-        Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 7, 2)));
-
-        board.doMove(new Move(3, 4, 5, 6));
-        Assert.assertNull(board.getPiece(4, 5));
-        Assert.assertNull(board.getPiece(2, 3));
-        Assert.assertEquals(board.getPiece(5, 6), new Piece(Owner.NP, Type.KING, 5, 6));
-        Assert.assertEquals(board.getPiece(5, 2), new Piece(Owner.PERSON, Type.MAN, 5, 2));
-        Assert.assertEquals(board.getPiece(2, 1), new Piece(Owner.PERSON, Type.MAN, 2, 1));
-        System.out.println(board.toString());
-
-        board.setOnBoard(Owner.PERSON, Type.MAN, 2, 3);
-        board.setOnBoard(Owner.PERSON, Type.KING, 3, 6);
-        System.out.println("SECOND\n" + board.toString());
-
-        Assert.assertFalse(board.isPossibleMove(new Move(5, 6, 6, 3)));
-        Assert.assertTrue(board.isPossibleMove(new Move(5, 6, 2, 7)));
-
-        board.doMove(new Move(5, 6, 2, 7));
-        Assert.assertNull(board.getPiece(5, 6));
-        Assert.assertNull(board.getPiece(2, 1));
-        Assert.assertNull(board.getPiece(5, 2));
-        Assert.assertNull(board.getPiece(2, 3));
-        Assert.assertNull(board.getPiece(3, 6));
-        Assert.assertEquals(board.getPiece(2, 7), new Piece(Owner.NP, Type.KING, 2, 7));
-        System.out.println(board.toString());
-
-        //Try round jump
-        board.clearBoard();
-        board.setOnBoard(Owner.PERSON, Type.KING, 3, 6);
-        board.setOnBoard(Owner.NP, Type.MAN, 2, 3, 4, 3, 2, 5, 4, 5);
-        System.out.println(board.toString());
-
-        Assert.assertFalse(board.isPossibleMove(new Move(3, 6, 3, 2)));
-        Assert.assertFalse(board.isPossibleMove(new Move(3, 6, -1, 2)));
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 6, 3, 6)));
-
-        board.doMove(new Move(3, 6, 3, 6));
-        Assert.assertNull(board.getPiece(2, 3));
-        Assert.assertNull(board.getPiece(4, 3));
-        Assert.assertNull(board.getPiece(2, 5));
-        Assert.assertNull(board.getPiece(4, 5));
-        Assert.assertEquals(board.getPiece(3, 6), new Piece(Owner.PERSON, Type.KING, 3, 6));
-        System.out.println(board.toString());
-
-        //Try false jumps
-        board.clearBoard();
-        board.setOnBoard(Owner.NP, Type.KING, 7, 4);
-        board.setOnBoard(Owner.PERSON, Type.KING, 7, 2);
-
-        Assert.assertFalse(board.isPossibleMove(new Move(7, 4, 8, 1)));
-        Assert.assertFalse(board.isPossibleMove(new Move(7, 4, 7, 4)));
-
-        //TODO
-        //Try direct run, while jumps are available
-    }
-
-    @Test
-    public void testManJump()
-    {
-        Board board = new MyBoard();
         Assert.assertEquals(board.getAllPieces(Owner.PERSON).size(), 12);
         Assert.assertEquals(board.getAllPieces(Owner.NP).size(), 12);
 
@@ -216,6 +140,21 @@ public class TestMyBoard
     }
 
     @Test
+    public void testManJumpSzenario2()
+    {
+        //Proove forced jump
+        MyBoard board = new MyBoard();
+
+        board.clearBoard();
+        board.setOnBoard(Owner.PERSON, Type.MAN, 1, 0);
+        board.setOnBoard(Owner.NP, Type.MAN, 2, 1, 4, 3);
+
+        Assert.assertFalse(board.isPossibleMove(new Move(1, 0, 0, 1)));
+        Assert.assertFalse(board.isPossibleMove(new Move(1, 0, 3, 2)));
+        Assert.assertTrue(board.isPossibleMove(new Move(1, 0, 5, 4)));
+    }
+
+    @Test
     public void testKingJumpSzenario1()
     {
         Board board = new MyBoard();
@@ -231,6 +170,79 @@ public class TestMyBoard
 
         //Try to move king
         Assert.assertTrue(board.isPossibleMove(new Move(3, 0, 5, 2)));
+    }
+
+    @Test
+    public void testKingJumpSzenario2()
+    {
+        MyBoard board = new MyBoard();
+
+        board.clearBoard();
+        board.setOnBoard(Owner.PERSON, Type.MAN, 5, 2, 4, 5);
+        board.setOnBoard(Owner.NP, Type.KING, 3, 4);
+
+        //Try to move with king
+        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 6, 1)));
+        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 5, 6)));
+
+        board.setOnBoard(Owner.PERSON, Type.MAN, 2, 3, 2, 1);
+
+        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 3, 6)));
+        Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 1, 0)));
+        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 5, 6)));
+        Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 7, 2)));
+
+        board.doMove(new Move(3, 4, 5, 6));
+        Assert.assertNull(board.getPiece(4, 5));
+        Assert.assertNull(board.getPiece(2, 3));
+        Assert.assertEquals(board.getPiece(5, 6), new Piece(Owner.NP, Type.KING, 5, 6));
+        Assert.assertEquals(board.getPiece(5, 2), new Piece(Owner.PERSON, Type.MAN, 5, 2));
+        Assert.assertEquals(board.getPiece(2, 1), new Piece(Owner.PERSON, Type.MAN, 2, 1));
+
+        board.setOnBoard(Owner.PERSON, Type.MAN, 2, 3);
+        board.setOnBoard(Owner.PERSON, Type.KING, 3, 6);
+
+        Assert.assertFalse(board.isPossibleMove(new Move(5, 6, 6, 3)));
+        Assert.assertTrue(board.isPossibleMove(new Move(5, 6, 2, 7)));
+
+        board.doMove(new Move(5, 6, 2, 7));
+        Assert.assertNull(board.getPiece(5, 6));
+        Assert.assertNull(board.getPiece(2, 1));
+        Assert.assertNull(board.getPiece(5, 2));
+        Assert.assertNull(board.getPiece(2, 3));
+        Assert.assertNull(board.getPiece(3, 6));
+        Assert.assertEquals(board.getPiece(2, 7), new Piece(Owner.NP, Type.KING, 2, 7));
+
+        //Try round jump
+        board.clearBoard();
+        board.setOnBoard(Owner.PERSON, Type.KING, 3, 6);
+        board.setOnBoard(Owner.NP, Type.MAN, 2, 3, 4, 3, 2, 5, 4, 5);
+
+        Assert.assertFalse(board.isPossibleMove(new Move(3, 6, 3, 2)));
+        Assert.assertFalse(board.isPossibleMove(new Move(3, 6, -1, 2)));
+        Assert.assertTrue(board.isPossibleMove(new Move(3, 6, 3, 6)));
+
+        board.doMove(new Move(3, 6, 3, 6));
+        Assert.assertNull(board.getPiece(2, 3));
+        Assert.assertNull(board.getPiece(4, 3));
+        Assert.assertNull(board.getPiece(2, 5));
+        Assert.assertNull(board.getPiece(4, 5));
+        Assert.assertEquals(board.getPiece(3, 6), new Piece(Owner.PERSON, Type.KING, 3, 6));
+
+        //Try false jumps
+        board.clearBoard();
+        board.setOnBoard(Owner.NP, Type.KING, 7, 4);
+        board.setOnBoard(Owner.PERSON, Type.KING, 7, 2);
+
+        Assert.assertFalse(board.isPossibleMove(new Move(7, 4, 8, 1)));
+        Assert.assertFalse(board.isPossibleMove(new Move(7, 4, 7, 4)));
+
+        //Try direct run, while jumps are available
+        board.clearBoard();
+        board.setOnBoard(Owner.NP, Type.KING, 4, 3);
+        board.setOnBoard(Owner.PERSON, Type.MAN, 5, 4);
+
+        Assert.assertFalse(board.isPossibleMove(new Move(4, 3, 7, 0)));
     }
 
     private void assertRightMove(Board board, Move move)

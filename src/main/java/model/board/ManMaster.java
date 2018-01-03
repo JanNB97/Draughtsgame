@@ -35,14 +35,16 @@ public class ManMaster
             }
             else
             {
-                if(yPos + 1 == newYPos && (xPos + 1 == newXPos || xPos - 1 == newXPos))
+                //Moves in right direction
+                if(yPos + 1 == newYPos && (xPos + 1 == newXPos || xPos - 1 == newXPos) )
                 {
-                    return true;
+                    //Just moves
+                    return couldStillJump(xPos, yPos, owner) == false;
                 }
                 else
                 {
                     //Jumped
-                    return isPossibleManJump(move);
+                    return couldStillJump(newXPos, newYPos, owner) == false && isPossibleManJump(move);
                 }
             }
         }
@@ -57,12 +59,12 @@ public class ManMaster
             {
                 if(yPos - 1 == newYPos && (xPos + 1 == newXPos || xPos - 1 == newXPos))
                 {
-                    return true;
+                    return couldStillJump(xPos, yPos, owner) == false;
                 }
                 else
                 {
                     //Jumped
-                    return isPossibleManJump(move);
+                    return couldStillJump(newXPos, newYPos, owner) == false && isPossibleManJump(move);
                 }
             }
         }
@@ -82,7 +84,7 @@ public class ManMaster
             case PERSON:
                 //Moves down
                 return isPossibleManJumpSearch(Owner.PERSON, piece.getxPos(), piece.getyPos(), piece.getxPos() - 2, piece.getyPos() + 2, move.getNewXPos(), move.getNewYPos())
-                    || isPossibleManJumpSearch(Owner.PERSON, piece.getxPos(), piece.getyPos(), piece.getxPos() + 2, piece.getyPos() + 2, move.getNewXPos(), move.getNewYPos());
+                        || isPossibleManJumpSearch(Owner.PERSON, piece.getxPos(), piece.getyPos(), piece.getxPos() + 2, piece.getyPos() + 2, move.getNewXPos(), move.getNewYPos());
             case NP:
                 //Moves up
                 return isPossibleManJumpSearch(Owner.NP, piece.getxPos(), piece.getyPos(), piece.getxPos() - 2, piece.getyPos() - 2, move.getNewXPos(), move.getNewYPos())
@@ -244,6 +246,83 @@ public class ManMaster
         else
         {
             return null;
+        }
+    }
+
+    private boolean couldStillJump(int xPos, int yPos, Owner owner)
+    {
+        Piece pieceRight;
+        Piece pieceRightNext;
+        Piece pieceLeft;
+        Piece pieceLeftNext;
+
+        switch (owner)
+        {
+            case PERSON:
+                //Moves down
+                if(xPos - 2 >= 0 && yPos + 2 <= 7)
+                {
+                    pieceRight = board.getPiece(xPos - 1, yPos + 1);
+                    pieceRightNext = board.getPiece(xPos - 2, yPos + 2);
+                }
+                else
+                {
+                    pieceRight = null;
+                    pieceRightNext = null;
+                }
+
+                if(xPos + 2 <= 7 && yPos + 2 <= 7)
+                {
+                    pieceLeft = board.getPiece(xPos + 1, yPos + 1);
+                    pieceLeftNext = board.getPiece(xPos + 2, yPos + 2);
+                }
+                else
+                {
+                    pieceLeft = null;
+                    pieceLeftNext = null;
+                }
+
+                break;
+
+            case NP:
+                //Moves up
+                if(xPos + 2 <= 7 && yPos - 2 >= 0)
+                {
+                    pieceRight = board.getPiece(xPos + 1, yPos - 1);
+                    pieceRightNext = board.getPiece(xPos + 2, yPos - 2);
+                }
+                else
+                {
+                    pieceRight = null;
+                    pieceRightNext = null;
+                }
+
+                if(xPos - 2 >= 0 && yPos - 2 >= 0)
+                {
+                    pieceLeft = board.getPiece(xPos - 1, yPos - 1);
+                    pieceLeftNext = board.getPiece(xPos - 2, yPos - 2);
+                }
+                else
+                {
+                    pieceLeft = null;
+                    pieceLeftNext = null;
+                }
+
+                break;
+
+            default:
+                Logger.getGlobal().severe("Selected no owner");
+                return false;
+        }
+
+        if(pieceRight != null && pieceRight.getOwner() == Owner.NP && pieceRightNext == null
+                || pieceLeft != null && pieceLeft.getOwner() == Owner.NP && pieceLeftNext == null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
