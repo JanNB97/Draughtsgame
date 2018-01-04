@@ -273,7 +273,8 @@ public class KingMaster
     	
     	return null;
     }
-	private class Position implements Comparable<Position>
+
+    private class Position implements Comparable<Position>
 	{
 		private int xPos;
 		private int yPos;

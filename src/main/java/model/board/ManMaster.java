@@ -282,7 +282,15 @@ public class ManMaster
                     pieceLeftNext = null;
                 }
 
-                break;
+                if(pieceRight != null && pieceRight.getOwner() == Owner.NP && pieceRightNext == null
+                        || pieceLeft != null && pieceLeft.getOwner() == Owner.NP && pieceLeftNext == null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
 
             case NP:
                 //Moves up
@@ -308,21 +316,21 @@ public class ManMaster
                     pieceLeftNext = null;
                 }
 
-                break;
+                if(pieceRight != null && pieceRight.getOwner() == Owner.PERSON && pieceRightNext == null
+                        || pieceLeft != null && pieceLeft.getOwner() == Owner.PERSON && pieceLeftNext == null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
 
             default:
                 Logger.getGlobal().severe("Selected no owner");
                 return false;
         }
 
-        if(pieceRight != null && pieceRight.getOwner() == Owner.NP && pieceRightNext == null
-                || pieceLeft != null && pieceLeft.getOwner() == Owner.NP && pieceLeftNext == null)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+
     }
 }

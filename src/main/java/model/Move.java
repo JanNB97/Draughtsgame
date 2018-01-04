@@ -127,4 +127,35 @@ public class Move
     {
 		return kingDirection;
 	}
+
+    @Override
+    public String toString()
+    {
+        return "(" + xPos + "," + yPos + ") -> (" + newXPos + "," + newYPos + ")";
+    }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+        if(obj.getClass().getSimpleName().equals("Move"))
+        {
+            Move move = ((Move)obj);
+
+            if(move.getxPos() == getxPos() && move.getyPos() == getyPos()
+                    && move.getNewXPos() == getNewXPos() && move.getNewYPos() == getNewYPos()
+                    && move.getKingDirection() == getKingDirection()
+                    && move.getJumpDirection() == jumpDirection)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

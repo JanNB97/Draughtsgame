@@ -1,3 +1,5 @@
+package MyBoard;
+
 import model.Move;
 import model.Piece;
 import model.board.Board;
@@ -9,7 +11,7 @@ import model.enums.Type;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestMyBoard
+public class TestManKingJump
 {
     @Test
     public void testManJumpSzenario1()
@@ -19,6 +21,7 @@ public class TestMyBoard
         Assert.assertEquals(board.getAllPieces(Owner.NP).size(), 12);
 
         assertWrongMove(board, new Move(0, 1, 5, 5, Direction.LEFT));
+        assertWrongMove(board, new Move(1, 0, 1, 0));
 
         assertRightMove(board, new Move(1, 2, 0, 3, Direction.LEFT));
         assertRightMove(board, new Move(0, 3, 1, 4, Direction.LEFT));
