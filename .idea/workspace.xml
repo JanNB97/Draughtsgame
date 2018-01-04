@@ -2,19 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda81767-1980-4071-b852-ff94412a97e0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/MyBoard/TestAllMoves.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/model/Move.class" afterPath="$PROJECT_DIR$/out/production/classes/model/Move.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/board/Board.class" afterPath="$PROJECT_DIR$/out/production/classes/model/board/Board.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/board/KingMaster$1.class" afterPath="$PROJECT_DIR$/out/production/classes/model/board/KingMaster$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/board/KingMaster$IsCorrectMove.class" afterPath="$PROJECT_DIR$/out/production/classes/model/board/KingMaster$IsCorrectMove.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/board/KingMaster$Position.class" afterPath="$PROJECT_DIR$/out/production/classes/model/board/KingMaster$Position.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/board/KingMaster.class" afterPath="$PROJECT_DIR$/out/production/classes/model/board/KingMaster.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/board/ManMaster$1.class" afterPath="$PROJECT_DIR$/out/production/classes/model/board/ManMaster$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/model/board/ManMaster.class" afterPath="$PROJECT_DIR$/out/production/classes/model/board/ManMaster.class" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/model/board/MyBoard$1.class" afterPath="$PROJECT_DIR$/out/production/classes/model/board/MyBoard$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/model/board/MyBoard.class" afterPath="$PROJECT_DIR$/out/production/classes/model/board/MyBoard.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/TestMyBoard.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/MyBoard/TestAllMoves.class" afterPath="$PROJECT_DIR$/out/test/classes/MyBoard/TestAllMoves.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/MyBoard/TestManKingJump.class" afterPath="$PROJECT_DIR$/out/test/classes/MyBoard/TestManKingJump.class" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Move.java" afterPath="$PROJECT_DIR$/src/main/java/model/Move.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Person.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/board/Board.java" afterPath="$PROJECT_DIR$/src/main/java/model/board/Board.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/board/KingMaster.java" afterPath="$PROJECT_DIR$/src/main/java/model/board/KingMaster.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/board/ManMaster.java" afterPath="$PROJECT_DIR$/src/main/java/model/board/ManMaster.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/board/MyBoard.java" afterPath="$PROJECT_DIR$/src/main/java/model/board/MyBoard.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestMyBoard.java" afterPath="$PROJECT_DIR$/src/test/java/MyBoard/TestManKingJump.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyBoard/TestAllMoves.java" afterPath="$PROJECT_DIR$/src/test/java/MyBoard/TestAllMoves.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyBoard/TestManKingJump.java" afterPath="$PROJECT_DIR$/src/test/java/MyBoard/TestManKingJump.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -35,97 +43,7 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestAllMoves.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MyBoard/TestAllMoves.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#testAllMovesPiece#0;class#TestAllMoves#0" expanded="false" />
-                <element signature="method#assertAllMoves#0;class#TestAllMoves#0" expanded="false" />
-                <element signature="method#containsThisMoves#0;class#TestAllMoves#0" expanded="false" />
-                <element signature="method#getAllMoves#0;class#TestAllMoves#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyBoard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/board/MyBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="433" column="5" lean-forward="false" selection-start-line="433" selection-start-column="5" selection-end-line="433" selection-end-column="5" />
-              <folding>
-                <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-                <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#getAllPieces#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#getAllMoves#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#getAllNormalMoves#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#getAllJumpMoves#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#getAllNormalManMoves#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#getAllJumpManMoves#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#doAllMoves#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#tryMove#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-                <element signature="e#11394#11395#0" expanded="true" />
-                <element signature="e#11452#11453#0" expanded="true" />
-                <element signature="e#11489#11490#0" expanded="true" />
-                <element signature="method#clearBoard#0;class#MyBoard#0" expanded="false" />
-                <element signature="method#setOnBoard#0;class#MyBoard#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KingMaster.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/board/KingMaster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="274" column="5" lean-forward="false" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
-              <folding>
-                <element signature="method#isPossibleKingMove#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#jumpToDestination#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#jumpToDestinationHelp#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#isDirectReachable#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#isOnDiagonale#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#distance#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#getNextStone#0;class#KingMaster#0" expanded="false" />
-                <element signature="class#Position#0;class#KingMaster#0" expanded="false" />
-                <element signature="class#IsCorrectMove#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#IsCorrectMove#0;class#IsCorrectMove#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#addAll#0;class#IsCorrectMove#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#couldStillJump#0;class#KingMaster#0" expanded="false" />
-                <element signature="method#getKingJumpVictims#0;class#KingMaster#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManMaster.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/board/ManMaster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="334" column="5" lean-forward="false" selection-start-line="334" selection-start-column="5" selection-end-line="334" selection-end-column="5" />
-              <folding>
-                <element signature="method#isPossibleManMove#0;class#ManMaster#0" expanded="false" />
-                <element signature="method#isPossibleManJump#0;class#ManMaster#0" expanded="false" />
-                <element signature="method#isPossibleManJumpSearch#0;class#ManMaster#0" expanded="false" />
-                <element signature="method#getManJumpVictims#0;class#ManMaster#0" expanded="false" />
-                <element signature="method#selectArrayList#0;class#ManMaster#0" expanded="false" />
-                <element signature="method#getManJumpVictimsSearch#0;class#ManMaster#0" expanded="false" />
-                <element signature="method#selectArrayListSearch#0;class#ManMaster#0" expanded="false" />
-                <element signature="method#couldStillJump#0;class#ManMaster#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -140,7 +58,11 @@
     <findStrings>
       <find>KingDirection</find>
       <find>getNextStone</find>
+      <find>assertFalse</find>
     </findStrings>
+    <replaceStrings>
+      <replace>assertNull</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -449,19 +371,21 @@
         <option value="$PROJECT_DIR$/src/main/java/model/enums/Owner.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/enums/Type.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/enums/Direction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Piece.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/MyBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/enums/KingDirection.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestMyBoard.java" />
         <option value="$PROJECT_DIR$/src/test/java/MyBoard/TestMyBoard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Move.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MyBoard/TestManKingJump.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/board/Board.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/board/KingMaster.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MyBoard/TestManKingJump.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/board/ManMaster.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/board/MyBoard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/board/KingMaster.java" />
         <option value="$PROJECT_DIR$/src/test/java/MyBoard/TestAllMoves.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/board/Move.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/board/Piece.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Move.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Piece.java" />
       </list>
     </option>
   </component>
@@ -492,9 +416,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -532,24 +457,6 @@
               <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
               <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="board" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -571,7 +478,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -826,43 +732,45 @@
       <workItem from="1514991013107" duration="4437000" />
       <workItem from="1515067886766" duration="1879000" />
       <workItem from="1515071367586" duration="1768000" />
+      <workItem from="1515083648194" duration="2424000" />
+      <workItem from="1515088942622" duration="2966000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 25m 44s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 50m 11s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 27m 01s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 51m 44s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 29m 30s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 52m 31s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 30m 11s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 52m 54s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 30m 38s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 53m 18s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 31m 28s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 53m 56s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 33m 49s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 54m 23s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 35m 03s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 55m 37s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 37m 41s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 56m 09s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 14h 38m 14s.xml">
+    <history-entry file="MyBoard_in_Draughtsgame_test - 2018.01.04 at 19h 58m 11s.xml">
       <configuration name="MyBoard in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57529000" />
+    <option name="totallyTimeSpent" value="62919000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -877,27 +785,28 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3921162" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39107883" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4304979" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16493776" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28941908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44190872" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16390042" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14658849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3195021" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23755187" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -905,7 +814,6 @@
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21887967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27985075" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -916,7 +824,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="59" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -927,7 +835,7 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#testManJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testManJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testKingJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
@@ -944,7 +852,7 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#testManJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testManJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testKingJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
@@ -961,7 +869,7 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#testManJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testManJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testKingJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
@@ -978,7 +886,7 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#testManJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testManJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testKingJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
@@ -1010,7 +918,7 @@
         <state relative-caret-position="357">
           <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#testManJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testManJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testKingJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
@@ -1027,7 +935,7 @@
         <state relative-caret-position="221">
           <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#testManJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testManJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testKingJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
@@ -1059,7 +967,7 @@
         <state relative-caret-position="289">
           <caret line="17" column="67" lean-forward="false" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#testManJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testManJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testKingJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
@@ -1107,13 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1168,13 +1069,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Board.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/model/MyBoard.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Piece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1189,48 +1083,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/enums/KingDirection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="78" lean-forward="false" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="138" column="4" lean-forward="false" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/board/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/board/ManMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="334" column="5" lean-forward="false" selection-start-line="334" selection-start-column="5" selection-end-line="334" selection-end-column="5" />
+        <state relative-caret-position="527">
+          <caret line="304" column="0" lean-forward="false" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
           <folding>
             <element signature="method#isPossibleManMove#0;class#ManMaster#0" expanded="false" />
             <element signature="method#isPossibleManJump#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#isPossibleManJumpSearch#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#getManJumpVictims#0;class#ManMaster#0" expanded="false" />
             <element signature="method#selectArrayList#0;class#ManMaster#0" expanded="false" />
             <element signature="method#getManJumpVictimsSearch#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#selectArrayListSearch#0;class#ManMaster#0" expanded="false" />
+            <element signature="method#selectTreeSetSearch#0;class#ManMaster#0" expanded="false" />
             <element signature="method#couldStillJump#0;class#ManMaster#0" expanded="false" />
+            <element signature="method#getAllNormalMoves#0;class#ManMaster#0" expanded="false" />
+            <element signature="method#getAllJumpMoves#0;class#ManMaster#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/enums/KingDirection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="78" lean-forward="false" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/board/KingMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="274" column="5" lean-forward="false" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
+        <state relative-caret-position="416">
+          <caret line="381" column="0" lean-forward="true" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
           <folding>
             <element signature="method#isPossibleKingMove#0;class#KingMaster#0" expanded="false" />
             <element signature="method#jumpToDestination#0;class#KingMaster#0" expanded="false" />
@@ -1244,45 +1133,17 @@
             <element signature="method#IsCorrectMove#0;class#IsCorrectMove#0;class#KingMaster#0" expanded="false" />
             <element signature="method#addAll#0;class#IsCorrectMove#0;class#KingMaster#0" expanded="false" />
             <element signature="method#couldStillJump#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#getKingJumpVictims#0;class#KingMaster#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/board/MyBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="433" column="5" lean-forward="false" selection-start-line="433" selection-start-column="5" selection-end-line="433" selection-end-column="5" />
-          <folding>
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllPieces#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllMoves#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllNormalMoves#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllJumpMoves#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllNormalManMoves#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllJumpManMoves#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doAllMoves#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#tryMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-            <element signature="e#11394#11395#0" expanded="true" />
-            <element signature="e#11452#11453#0" expanded="true" />
-            <element signature="e#11489#11490#0" expanded="true" />
-            <element signature="method#clearBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#setOnBoard#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#getAllJumpMoves#0;class#KingMaster#0" expanded="false" />
+            <element signature="method#getAllNormalMoves#0;class#KingMaster#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MyBoard/TestManKingJump.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="272">
+          <caret line="163" column="4" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#testManJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testManJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
             <element signature="method#testKingJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
@@ -1295,14 +1156,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MyBoard/TestAllMoves.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="323">
+          <caret line="87" column="4" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#testAllMovesKing#0;class#TestAllMoves#0" expanded="false" />
             <element signature="method#testAllMovesPiece#0;class#TestAllMoves#0" expanded="false" />
             <element signature="method#assertAllMoves#0;class#TestAllMoves#0" expanded="false" />
             <element signature="method#containsThisMoves#0;class#TestAllMoves#0" expanded="false" />
             <element signature="method#getAllMoves#0;class#TestAllMoves#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/board/MyBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+          <folding>
+            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
+            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#getAllPieces#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#getAllMoves#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#getAllNormalMoves#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#getAllJumpMoves#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#isPossibleMove#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#tryMove#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#clearBoard#0;class#MyBoard#0" expanded="false" />
+            <element signature="method#setOnBoard#0;class#MyBoard#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Piece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="method#Piece#0;class#Piece#0" expanded="false" />
+            <element signature="method#equals#0;class#Piece#0" expanded="false" />
+            <element signature="method#compareTo#0;class#Piece#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="method#setKingDirection#0;class#Move#0" expanded="false" />
+            <element signature="method#equals#0;class#Move#0" expanded="false" />
           </folding>
         </state>
       </provider>

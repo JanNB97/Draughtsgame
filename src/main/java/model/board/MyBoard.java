@@ -2,8 +2,6 @@ package model.board;
 
 import model.Move;
 import model.Piece;
-import model.enums.Direction;
-import model.enums.KingDirection;
 import model.enums.Owner;
 import model.enums.Type;
 
@@ -102,7 +100,8 @@ public class MyBoard implements Board
     	return allPieces;
     }
 
-    
+
+
     @Override
     public ArrayList<ArrayList<Move>> getAllMoves(Owner owner)
     {
@@ -140,15 +139,14 @@ public class MyBoard implements Board
 
     private ArrayList<Move> getAllNormalMoves(Piece piece)
     {
-        ArrayList<Move> allMoves = new ArrayList<>();
+        ArrayList<Move> allNormalMoves = null;
 
         switch (piece.getType())
         {
             case KING:
-                //TODO
-                return null;
+                return kingMaster.getAllNormalMoves(piece);
             case MAN:
-                return getAllNormalManMoves(piece);
+                return manMaster.getAllNormalMoves(piece);
             default:
                 Logger.getGlobal().severe("No type selected");
                 return null;
@@ -157,160 +155,42 @@ public class MyBoard implements Board
 
     private ArrayList<Move> getAllJumpMoves(Piece piece)
     {
-        ArrayList<Move> allMoves = new ArrayList<>();
+        ArrayList<Move> allJumpMoves = null;
 
         switch (piece.getType())
         {
             case KING:
-                //TODO
-                return null;
+                return kingMaster.getAllJumpMoves(piece);
             case MAN:
-                return getAllJumpManMoves(piece);
+                return manMaster.getAllJumpMoves(piece);
             default:
                 Logger.getGlobal().severe("No type selected");
                 return null;
         }
     }
-
-    private ArrayList<Move> getAllNormalManMoves(Piece piece)
-    {
-        ArrayList<Move> allMoves = new ArrayList<>();
-
-        int xPos = piece.getxPos();
-        int yPos = piece.getyPos();
-
-        int TYPE;
-
-        switch (piece.getOwner())
-        {
-            case PERSON:
-                //Moves down
-                TYPE = -1;
-                break;
-            case NP:
-                //Moves up
-                TYPE = 1;
-                break;
-
-            default:
-                Logger.getGlobal().severe("No owner selected");
-                return null;
-        }
-
-        //No jumps
-        Move simpleMoveLeft1 = new Move(xPos, yPos, xPos - 1, yPos - 1*TYPE, Direction.LEFT);
-        Move simpleMoveLeft2 = new Move(xPos, yPos, xPos - 1, yPos - 1*TYPE, Direction.RIGHT);
-        if(isPossibleMove(simpleMoveLeft1))
-        {
-            allMoves.add(simpleMoveLeft1);
-            allMoves.add(simpleMoveLeft2);
-        }
-        Move simpleMoveRight1 = new Move(xPos, yPos, xPos + 1, yPos - 1*TYPE, Direction.LEFT);
-        Move simpleMoveRight2 = new Move(xPos, yPos, xPos + 1, yPos - 1*TYPE, Direction.RIGHT);
-        if(isPossibleMove(simpleMoveRight1))
-        {
-            allMoves.add(simpleMoveRight1);
-            allMoves.add(simpleMoveRight2);
-        }
-
-        return allMoves;
-    }
-
-    private ArrayList<Move> getAllJumpManMoves(Piece piece)
-    {
-        ArrayList<Move> allMoves = new ArrayList<>();
-
-        int xPos = piece.getxPos();
-        int yPos = piece.getyPos();
-
-        int TYPE;
-
-        switch (piece.getOwner())
-        {
-            case PERSON:
-                //Moves down
-                TYPE = -1;
-                break;
-            case NP:
-                //Moves up
-                TYPE = 1;
-                break;
-
-            default:
-                Logger.getGlobal().severe("No owner selected");
-                return null;
-        }
-
-        //Jump moves
-        //Row 1
-        Move moveOne1 = new Move(xPos, yPos, xPos - 2, yPos - 2*TYPE, Direction.RIGHT);
-        Move moveOne2 = new Move(xPos, yPos, xPos - 2, yPos - 2*TYPE, Direction.LEFT);
-        Move moveTwo1 = new Move(xPos, yPos, xPos + 2, yPos - 2*TYPE, Direction.RIGHT);
-        Move moveTwo2 = new Move(xPos, yPos, xPos + 2, yPos - 2*TYPE, Direction.LEFT);
-
-        if(isPossibleMove(moveOne1))
-        {
-            allMoves.add(moveOne1);
-            allMoves.add(moveOne2);
-        }
-        if(isPossibleMove(moveTwo1))
-        {
-            allMoves.add(moveTwo1);
-            allMoves.add(moveTwo2);
-        }
-
-        int row2Start = xPos - 4;
-        for(int i = 0; i < 4; i++)
-        {
-            Move move1 = new Move(xPos, yPos, row2Start + 4* i, yPos - TYPE*4, Direction.LEFT);
-            Move move2 = new Move(xPos, yPos, row2Start + 4* i, yPos - TYPE*4, Direction.RIGHT);
-
-            if(isPossibleMove(move1))
-            {
-                allMoves.add(move1);
-                allMoves.add(move2);
-            }
-        }
-
-        int row3Start = xPos - 6;
-        for(int i = 0; i < 5; i++)
-        {
-            Move move1 = new Move(xPos, yPos, row3Start + 4* i, yPos - 6*TYPE, Direction.LEFT);
-            Move move2 = new Move(xPos, yPos, row3Start + 4* i, yPos - 6*TYPE, Direction.RIGHT);
-
-            if(isPossibleMove(move1))
-            {
-                allMoves.add(move1);
-                allMoves.add(move2);
-            }
-        }
-
-        return allMoves;
-    }
   
-    
+
+
+    //Returns null if not possible, returns TreeSet with victims if possible
     @Override
-    public boolean isPossibleMove(Move move)
+    public TreeSet<Piece> isPossibleMove(Move move)
     {
         Piece piece = getPiece(move.getxPos(), move.getyPos());
 
         if(piece == null)
         {
             Logger.getGlobal().severe("prove possible move on null-pointer");
-            return false;
+            return null;
         }
 
         Type type = piece.getType();
-        Owner owner = piece.getOwner();
-        int xPos = piece.getxPos();
-        int yPos = piece.getyPos();
         int newXPos = move.getNewXPos();
         int newYPos = move.getNewYPos();
 
         if(newXPos < 0 || newXPos > 7 || newYPos < 0 || newYPos > 7
                 || (getPiece(newXPos, newYPos) != null && getPiece(newXPos, newYPos).getType() != Type.KING))
         {
-            return false;
+            return null;
         }
 
         if(type == Type.MAN)
@@ -323,30 +203,15 @@ public class MyBoard implements Board
         }
         else {
             Logger.getGlobal().severe("No type selected");
-            return false;
+            return null;
         }
     }
    
     //Only if it's a possible move!!!
     @Override
-    public void doMove(Move move)
+    public void doMove(Move move, TreeSet<Piece> victims)
     {
         Piece piece = getPiece(move.getxPos(), move.getyPos());
-
-        ArrayList<Piece> victims;
-        if(piece.getType() == Type.MAN)
-        {
-            victims = manMaster.getManJumpVictims(move);
-        }
-        else if(piece.getType() == Type.KING)
-        {
-            victims = kingMaster.getKingJumpVictims(move);
-        }
-        else
-        {
-            Logger.getGlobal().severe("No type selected");
-            victims = null;
-        }
 
         //Set piece
         board[piece.getyPos()][piece.getxPos()] = null;
@@ -369,22 +234,13 @@ public class MyBoard implements Board
         }
     }
 
-    @Override
-    public void doAllMoves(Move...moves)
-    {
-    	for(Move move : moves)
-    	{
-    		doMove(move);
-    	}
-    }
-
     //Only if it's a possible move!!!
     @Override
-    public Board tryMove(Move move)
+    public Board tryMove(Move move, TreeSet<Piece> victims)
     {
         Board board = new MyBoard(this);
 
-        board.doMove(move);
+        board.doMove(move, victims);
 
         return board;
     }

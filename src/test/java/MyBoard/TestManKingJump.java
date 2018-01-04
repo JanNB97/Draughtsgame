@@ -11,6 +11,8 @@ import model.enums.Type;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.TreeSet;
+
 public class TestManKingJump
 {
     @Test
@@ -152,27 +154,23 @@ public class TestManKingJump
         board.setOnBoard(Owner.PERSON, Type.MAN, 1, 0);
         board.setOnBoard(Owner.NP, Type.MAN, 2, 1, 4, 3);
 
-        Assert.assertFalse(board.isPossibleMove(new Move(1, 0, 0, 1)));
-        Assert.assertFalse(board.isPossibleMove(new Move(1, 0, 3, 2)));
-        Assert.assertTrue(board.isPossibleMove(new Move(1, 0, 5, 4)));
+        Assert.assertNull(board.isPossibleMove(new Move(1, 0, 0, 1)));
+        Assert.assertNull(board.isPossibleMove(new Move(1, 0, 3, 2)));
+        Assert.assertNotNull(board.isPossibleMove(new Move(1, 0, 5, 4)));
     }
 
     @Test
     public void testKingJumpSzenario1()
     {
-        Board board = new MyBoard();
+        MyBoard board = new MyBoard();
+        board.clearBoard();
 
-        board.doAllMoves(new Move(5, 2, 6, 3), new Move(6, 3, 7, 4));
-        board.doAllMoves(new Move(4, 1, 5, 2), new Move(5, 2, 6, 3));
-        board.doAllMoves(new Move(3, 2, 2, 3), new Move(2, 3, 1, 4));
-        board.doAllMoves(new Move(3, 0, 4, 1), new Move(4, 1, 3, 2), new Move(3, 2, 2, 3));
+        board.setOnBoard(Owner.NP, Type.MAN, 0, 1);
 
         //Change man to king
-        board.doAllMoves(new Move(6, 5, 5, 4), new Move(5, 4, 4, 3), new Move(4, 3, 5, 2), new Move(5, 2, 4, 1), new Move(4, 1, 3, 0));
-        Assert.assertEquals(board.getPiece(3, 0).getType(), Type.KING);
-
-        //Try to move king
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 0, 5, 2)));
+        Move m = new Move(0, 1, 1, 0);
+        board.doMove(m, board.isPossibleMove(m));
+        Assert.assertEquals(board.getPiece(1, 0).getType(), Type.KING);
     }
 
     @Test
@@ -185,17 +183,17 @@ public class TestManKingJump
         board.setOnBoard(Owner.NP, Type.KING, 3, 4);
 
         //Try to move with king
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 6, 1)));
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 5, 6)));
+        Assert.assertNotNull(board.isPossibleMove(new Move(3, 4, 6, 1)));
+        Assert.assertNotNull(board.isPossibleMove(new Move(3, 4, 5, 6)));
 
         board.setOnBoard(Owner.PERSON, Type.MAN, 2, 3, 2, 1);
 
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 3, 6)));
-        Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 1, 0)));
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 4, 5, 6)));
-        Assert.assertFalse(board.isPossibleMove(new Move(3, 4, 7, 2)));
+        Assert.assertNotNull(board.isPossibleMove(new Move(3, 4, 3, 6)));
+        Assert.assertNull(board.isPossibleMove(new Move(3, 4, 1, 0)));
+        Assert.assertNotNull(board.isPossibleMove(new Move(3, 4, 5, 6)));
+        Assert.assertNull(board.isPossibleMove(new Move(3, 4, 7, 2)));
 
-        board.doMove(new Move(3, 4, 5, 6));
+        board.doMove(new Move(3, 4, 5, 6), board.isPossibleMove(new Move(3, 4, 5, 6)));
         Assert.assertNull(board.getPiece(4, 5));
         Assert.assertNull(board.getPiece(2, 3));
         Assert.assertEquals(board.getPiece(5, 6), new Piece(Owner.NP, Type.KING, 5, 6));
@@ -205,10 +203,10 @@ public class TestManKingJump
         board.setOnBoard(Owner.PERSON, Type.MAN, 2, 3);
         board.setOnBoard(Owner.PERSON, Type.KING, 3, 6);
 
-        Assert.assertFalse(board.isPossibleMove(new Move(5, 6, 6, 3)));
-        Assert.assertTrue(board.isPossibleMove(new Move(5, 6, 2, 7)));
+        Assert.assertNull(board.isPossibleMove(new Move(5, 6, 6, 3)));
+        Assert.assertNotNull(board.isPossibleMove(new Move(5, 6, 2, 7)));
 
-        board.doMove(new Move(5, 6, 2, 7));
+        board.doMove(new Move(5, 6, 2, 7), board.isPossibleMove(new Move(5, 6, 2, 7)));
         Assert.assertNull(board.getPiece(5, 6));
         Assert.assertNull(board.getPiece(2, 1));
         Assert.assertNull(board.getPiece(5, 2));
@@ -221,11 +219,11 @@ public class TestManKingJump
         board.setOnBoard(Owner.PERSON, Type.KING, 3, 6);
         board.setOnBoard(Owner.NP, Type.MAN, 2, 3, 4, 3, 2, 5, 4, 5);
 
-        Assert.assertFalse(board.isPossibleMove(new Move(3, 6, 3, 2)));
-        Assert.assertFalse(board.isPossibleMove(new Move(3, 6, -1, 2)));
-        Assert.assertTrue(board.isPossibleMove(new Move(3, 6, 3, 6)));
+        Assert.assertNull(board.isPossibleMove(new Move(3, 6, 3, 2)));
+        Assert.assertNull(board.isPossibleMove(new Move(3, 6, -1, 2)));
+        Assert.assertNotNull(board.isPossibleMove(new Move(3, 6, 3, 6)));
 
-        board.doMove(new Move(3, 6, 3, 6));
+        board.doMove(new Move(3, 6, 3, 6), board.isPossibleMove(new Move(3, 6, 3, 6)));
         Assert.assertNull(board.getPiece(2, 3));
         Assert.assertNull(board.getPiece(4, 3));
         Assert.assertNull(board.getPiece(2, 5));
@@ -237,25 +235,25 @@ public class TestManKingJump
         board.setOnBoard(Owner.NP, Type.KING, 7, 4);
         board.setOnBoard(Owner.PERSON, Type.KING, 7, 2);
 
-        Assert.assertFalse(board.isPossibleMove(new Move(7, 4, 8, 1)));
-        Assert.assertFalse(board.isPossibleMove(new Move(7, 4, 7, 4)));
+        Assert.assertNull(board.isPossibleMove(new Move(7, 4, 8, 1)));
+        Assert.assertNull(board.isPossibleMove(new Move(7, 4, 7, 4)));
 
         //Try direct run, while jumps are available
         board.clearBoard();
         board.setOnBoard(Owner.NP, Type.KING, 4, 3);
         board.setOnBoard(Owner.PERSON, Type.MAN, 5, 4);
 
-        Assert.assertFalse(board.isPossibleMove(new Move(4, 3, 7, 0)));
+        Assert.assertNull(board.isPossibleMove(new Move(4, 3, 7, 0)));
     }
 
     private void assertRightMove(Board board, Move move)
     {
         Owner owner = board.getPiece(move.getxPos(), move.getyPos()).getOwner();
 
-        boolean b = board.isPossibleMove(move);
-        Assert.assertTrue(b);
+        TreeSet<Piece> b = board.isPossibleMove(move);
+        Assert.assertNotNull(b);
 
-        board.doMove(move);
+        board.doMove(move, b);
         Assert.assertNull(board.getPiece(move.getxPos(), move.getyPos()));
         Assert.assertEquals(board.getPiece(move.getNewXPos(), move.getNewYPos()).getOwner(), owner);
         Assert.assertEquals(board.getPiece(move.getNewXPos(), move.getNewYPos()).getxPos(), move.getNewXPos());
@@ -264,7 +262,7 @@ public class TestManKingJump
 
     private void assertWrongMove(Board board, Move move)
     {
-        boolean b = board.isPossibleMove(move);
-        Assert.assertFalse(b);
+        TreeSet<Piece> b = board.isPossibleMove(move);
+        Assert.assertNull(b);
     }
 }

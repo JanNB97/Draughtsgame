@@ -2,7 +2,6 @@ package MyBoard;
 
 import model.Move;
 import model.Piece;
-import model.board.Board;
 import model.board.MyBoard;
 import model.enums.Direction;
 import model.enums.Owner;
@@ -10,12 +9,27 @@ import model.enums.Type;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class TestAllMoves
 {
+    @Test
+    public void testAllMovesKing()
+    {
+        MyBoard board = new MyBoard();
+        board.clearBoard();
+        board.setOnBoard(Owner.PERSON, Type.MAN, 2, 1, 2, 3);
+        board.setOnBoard(Owner.NP, Type.MAN, 7, 2, 1, 4);
+        board.setOnBoard(Owner.NP, Type.KING, 4, 5);
+
+        System.out.println(board.toString());
+        ArrayList<ArrayList<Move>> allMovesNP = board.getAllMoves(Owner.NP);
+        System.out.println(allMovesNP.toString());
+        assertAllMoves(board, new Piece(Owner.NP, Type.MAN, 1, 4), allMovesNP, 1, 0);
+        assertAllMoves(board, new Piece(Owner.NP, Type.KING, 4, 5), allMovesNP, 3, 0);
+    }
+
     @Test
     public void testAllMovesPiece()
     {
@@ -64,11 +78,11 @@ public class TestAllMoves
     {
         ArrayList<Move> allMoves = getAllMoves(allMovesFromAllPieces, piece);
 
-        Assert.assertTrue(containsThisMoves(allMoves, piece.getxPos(), piece.getyPos(), newPos));
+        Assert.assertTrue(containsThisMoves(piece.getType(), allMoves, piece.getxPos(), piece.getyPos(), newPos));
     }
 
     //Test with right and left!!!
-    private boolean containsThisMoves(ArrayList<Move> allMoves, int xPos, int yPos, int...newPos)
+    private boolean containsThisMoves(Type type, ArrayList<Move> allMoves, int xPos, int yPos, int...newPos)
     {
         if(newPos.length % 2 != 0)
         {
@@ -78,16 +92,23 @@ public class TestAllMoves
 
         for(int i = 0; i < newPos.length; i += 2)
         {
-            Move move1 = new Move(xPos, yPos, newPos[i], newPos[i+1], Direction.RIGHT);
-            Move move2 = new Move(xPos, yPos, newPos[i], newPos[i + 1], Direction.LEFT);
+            Move move1 = new Move(xPos, yPos, newPos[i], newPos[i + 1], Direction.LEFT);
+            Move move2 = new Move(xPos, yPos, newPos[i], newPos[i+1], Direction.RIGHT);
 
-            if(allMoves.contains(move1) == false || allMoves.contains(move2) == false)
+            if(allMoves.contains(move1) == false || (allMoves.contains(move2) == false && type == Type.MAN))
             {
                 return false;
             }
         }
 
-        return allMoves.size() == newPos.length;
+        if(type == Type.KING)
+        {
+            return allMoves.size() == newPos.length / 2;
+        }
+        else
+        {
+            return allMoves.size() == newPos.length;
+        }
     }
 
     private ArrayList<Move> getAllMoves(ArrayList<ArrayList<Move>> allMovesFromAllPieces, Piece piece)

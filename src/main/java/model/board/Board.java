@@ -14,10 +14,9 @@ public interface Board
 
     ArrayList<ArrayList<Move>> getAllMoves(Owner owner);
 
-    boolean isPossibleMove(Move move);
-    void doMove(Move move);
-    void doAllMoves(Move...moves);
-    Board tryMove(Move move);
+    TreeSet<Piece> isPossibleMove(Move move);
+    void doMove(Move move, TreeSet<Piece> victims);
+    Board tryMove(Move move, TreeSet<Piece> victims);
 
     String toString();
 }

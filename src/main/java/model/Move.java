@@ -1,7 +1,5 @@
 package model;
 
-import java.util.logging.Logger;
-
 import model.enums.Direction;
 import model.enums.KingDirection;
 

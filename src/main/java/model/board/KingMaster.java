@@ -3,6 +3,7 @@ package model.board;
 import java.util.ArrayList;
 import java.util.TreeSet;
 import java.util.logging.Logger;
+
 import model.Move;
 import model.Piece;
 import model.enums.KingDirection;
@@ -18,52 +19,43 @@ public class KingMaster
 		this.board = board;
 	}
 
-
-	boolean isPossibleKingMove(Move move)
+	public TreeSet<Piece> isPossibleKingMove(Move move)
 	{
+		//Try to jump in all four directions
 		Piece piece = board.getPiece(move.getxPos(), move.getyPos());
 		Owner owner = piece.getOwner();
 
-		//Try to reach direct
-		if(isDirectReachable(new TreeSet<>(), move) && couldStillJump(move.getxPos(), move.getyPos(), new TreeSet<>(), owner) == false)
-		{
-			return true;
-		}
-		else
-		{
-			//Try to jump in all four directions
-			board.clearPiece(piece.getxPos(), piece.getyPos());
+		board.clearPiece(piece.getxPos(), piece.getyPos());
 
-			boolean b1 = jumpToDestination(new TreeSet<>(), owner, KingDirection.NORTHEAST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true).bool();
-			if(b1)
-			{
-				board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-				return b1;
-			}
-			boolean b2 = jumpToDestination(new TreeSet<>(), owner, KingDirection.NORTHWEST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true).bool();
-			if(b2)
-			{
-				board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-				return b2;
-			}
-			boolean b3 = jumpToDestination(new TreeSet<>(), owner, KingDirection.SOUTHWEST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true).bool();
-			if(b3)
-			{
-				board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-				return b3;
-			}
-			boolean b4 = jumpToDestination(new TreeSet<>(), owner, KingDirection.SOUTHEAST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true).bool();
-			if(b4)
-			{
-				board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-				return b4;
-			}
-
+		IsCorrectMove c1 = jumpToDestination(new TreeSet<>(), owner, KingDirection.NORTHEAST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true);
+		if(c1.bool() == true)
+		{
 			board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-			return false;
+			return c1.getAllVictims();
 		}
+		IsCorrectMove c2 = jumpToDestination(new TreeSet<>(), owner, KingDirection.NORTHWEST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true);
+		if(c2.bool() == true)
+		{
+			board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
+			return c2.getAllVictims();
+		}
+		IsCorrectMove c3 = jumpToDestination(new TreeSet<>(), owner, KingDirection.SOUTHWEST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true);
+		if(c3.bool() == true)
+		{
+			board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
+			return c3.getAllVictims();
+		}
+		IsCorrectMove c4 = jumpToDestination(new TreeSet<>(), owner, KingDirection.SOUTHEAST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true);
+		if(c4.bool() == true)
+		{
+			board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
+			return c4.getAllVictims();
+		}
+
+		board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
+		return null;
 	}
-	
+
 	private IsCorrectMove jumpToDestination(TreeSet<Position> jumpedPieces, Owner owner, KingDirection direction, int xPos, int yPos, int destX, int destY, boolean start)
 	{
 		if(xPos < 0 || xPos > 7 || yPos < 0 || yPos > 7 || 
@@ -273,7 +265,6 @@ public class KingMaster
     	
     	return null;
     }
-
     private class Position implements Comparable<Position>
 	{
 		private int xPos;
@@ -339,16 +330,9 @@ public class KingMaster
 			return isCorrectMove;
 		}
 
-		public ArrayList<Piece> getAllVictims()
+		public TreeSet<Piece> getAllVictims()
 		{
-			ArrayList<Piece> pieces = new ArrayList<>();
-
-			for(Piece victim : victims)
-			{
-				pieces.add(victim);
-			}
-
-			return pieces;
+			return victims;
 		}
 	}
 	private boolean couldStillJump(int xPos, int yPos, TreeSet<Position> victims, Owner owner)
@@ -396,40 +380,84 @@ public class KingMaster
 
 
 
-	public ArrayList<Piece> getKingJumpVictims(Move move)
+	public ArrayList<Move> getAllJumpMoves(Piece piece)
 	{
-		//Try to jump in all four directions
-		Piece piece = board.getPiece(move.getxPos(), move.getyPos());
-		Owner owner = piece.getOwner();
+		ArrayList<Move> allJumps = new ArrayList<>();
 
-		board.clearPiece(piece.getxPos(), piece.getyPos());
+		//row
+		for(int i = 0; i < 8; i++)
+		{
+			int yPos = i;
 
-		IsCorrectMove c1 = jumpToDestination(new TreeSet<>(), owner, KingDirection.NORTHEAST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true);
-		if(c1.bool() == true)
-		{
-			board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-			return c1.getAllVictims();
-		}
-		IsCorrectMove c2 = jumpToDestination(new TreeSet<>(), owner, KingDirection.NORTHWEST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true);
-		if(c2.bool() == true)
-		{
-			board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-			return c2.getAllVictims();
-		}
-		IsCorrectMove c3 = jumpToDestination(new TreeSet<>(), owner, KingDirection.SOUTHWEST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true);
-		if(c3.bool() == true)
-		{
-			board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-			return c3.getAllVictims();
-		}
-		IsCorrectMove c4 = jumpToDestination(new TreeSet<>(), owner, KingDirection.SOUTHEAST, move.getxPos(), move.getyPos(), move.getNewXPos(), move.getNewYPos(), true);
-		if(c4.bool() == true)
-		{
-			board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-			return c4.getAllVictims();
+			//column
+			for(int j = 0; j < 8; j += 2)
+			{
+				int xPos = j;
+
+				if(i % 2 == 0)
+				{
+					xPos++;
+				}
+
+				Move move = new Move(piece.getxPos(), piece.getyPos(), xPos, yPos);
+				TreeSet<Piece> victims = board.isPossibleMove(move);
+				if(victims != null && victims.size() > 0)
+				{
+					allJumps.add(move);
+				}
+			}
 		}
 
-		board.setOnBoard(owner, Type.KING, piece.getxPos(), piece.getyPos());
-		return new ArrayList<>();
+		return allJumps;
+	}
+
+	public ArrayList<Move> getAllNormalMoves(Piece piece)
+	{
+		ArrayList<Move> allNormal = new ArrayList<>();
+
+		int xPos = piece.getxPos();
+		int yPos = piece.getyPos();
+
+		for(int i = 1; i < 8; i++)
+		{
+			//Northeast
+			Move move = new Move(xPos, yPos, xPos + i, yPos - i);
+			TreeSet<Piece> victims = board.isPossibleMove(move);
+
+			if(victims != null && victims.size() == 0)
+			{
+				allNormal.add(move);
+			}
+
+			//Southeast
+			move = new Move(xPos, yPos, xPos + i, yPos + i);
+			victims = board.isPossibleMove(move);
+
+			if(victims != null && victims.size() == 0)
+			{
+				allNormal.add(move);
+			}
+
+			//Southwest
+			move = new Move(xPos, yPos, xPos - i, yPos + i);
+			victims = board.isPossibleMove(move);
+
+			if(victims != null && victims.size() == 0)
+			{
+				allNormal.add(move);
+			}
+
+
+			//Northwest
+			move = new Move(xPos, yPos, xPos - i, yPos - i);
+			victims = board.isPossibleMove(move);
+
+			if(victims != null && victims.size() == 0)
+			{
+				allNormal.add(move);
+			}
+		}
+
+		return allNormal;
 	}
 }
