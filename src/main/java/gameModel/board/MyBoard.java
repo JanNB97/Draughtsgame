@@ -188,7 +188,7 @@ public class MyBoard implements Board
         int newYPos = move.getNewYPos();
 
         if(newXPos < 0 || newXPos > 7 || newYPos < 0 || newYPos > 7
-                || (getPiece(newXPos, newYPos) != null && getPiece(newXPos, newYPos).getType() != Type.KING))
+                || (getPiece(newXPos, newYPos) != null && getPiece(move.getxPos(), move.getyPos()).getType() != Type.KING))
         {
             return null;
         }

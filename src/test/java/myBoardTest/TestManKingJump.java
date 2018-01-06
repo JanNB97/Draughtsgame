@@ -16,6 +16,17 @@ import java.util.TreeSet;
 public class TestManKingJump
 {
     @Test
+    public void testKingSzenario3()
+    {
+        MyBoard board = new MyBoard();
+        board.clearBoard();
+        board.setOnBoard(Owner.NP, Type.KING, 5, 6);
+        board.setOnBoard(Owner.NP, Type.MAN, 6, 7);
+
+        Assert.assertNull(board.isPossibleMove(new Move(6, 7, 5, 6)));
+    }
+
+    @Test
     public void testManJumpSzenario1()
     {
         MyBoard board = new MyBoard();

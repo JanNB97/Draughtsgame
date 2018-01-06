@@ -8,12 +8,37 @@ import gameModel.enums.Owner;
 import gameModel.enums.Type;
 import org.junit.Assert;
 import org.junit.Test;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class TestAllMoves
 {
+    @Test
+    public void testKingAllNormalMoves()
+    {
+        //There is a king, but he can not jump -> Can it still normal move?
+        MyBoard board = new MyBoard();
+        board.clearBoard();
+        board.setOnBoard(Owner.NP, Type.KING, 2, 1);
+
+
+        ArrayList<ArrayList<Move>> m = board.getAllMoves(Owner.NP);
+        ArrayList<Move> allMoves = m.get(0);
+
+        Assert.assertEquals(allMoves.size(), 9);
+        Assert.assertTrue(allMoves.contains(new Move(2, 1, 1, 0)));
+        Assert.assertTrue(allMoves.contains(new Move(2, 1, 3, 0)));
+        Assert.assertTrue(allMoves.contains(new Move(2, 1, 3, 2)));
+        Assert.assertTrue(allMoves.contains(new Move(2, 1, 4, 3)));
+        Assert.assertTrue(allMoves.contains(new Move(2, 1, 5, 4)));
+        Assert.assertTrue(allMoves.contains(new Move(2, 1, 6, 5)));
+        Assert.assertTrue(allMoves.contains(new Move(2, 1, 7, 6)));
+        Assert.assertTrue(allMoves.contains(new Move(2, 1, 1, 2)));
+        Assert.assertTrue(allMoves.contains(new Move(2, 1, 0, 3)));
+    }
+
     @Test
     public void testAllMovesKing()
     {

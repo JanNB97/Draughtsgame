@@ -9,11 +9,12 @@ import java.util.TreeSet;
 public interface Game
 {
     //returns null, if no possible move, else returns victims
-    TreeSet<Piece> doMove(Move move);
+    ArrayList<Piece> doMove(Move move);
 
     ArrayList<Piece> getAllMovablePieces();
     ArrayList<Move> getAllCurrentMoves(Piece piece);
 
     Board getBoard();
     Owner getWinner();
+    Owner getOnTurn();
 }

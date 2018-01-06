@@ -22,16 +22,17 @@ public class MyGame implements Game
     }
 
     @Override
-    public TreeSet<Piece> doMove(Move move)
+    public ArrayList<Piece> doMove(Move move)
     {
         Piece piece = board.getPiece(move.getxPos(), move.getyPos());
         TreeSet<Piece> victims = board.isPossibleMove(move);
+        ArrayList<Piece> victimsList = new ArrayList<>(victims);
 
         if(piece.getOwner() == onTurn && victims != null)
         {
             board.doMove(move, victims);
             moveFinished();
-            return victims;
+            return victimsList;
         }
         else
         {
@@ -153,5 +154,11 @@ public class MyGame implements Game
     public Owner getWinner()
     {
         return winner;
+    }
+
+    @Override
+    public Owner getOnTurn()
+    {
+        return onTurn;
     }
 }

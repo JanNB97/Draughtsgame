@@ -21,6 +21,12 @@ public class KingMaster
 
 	public TreeSet<Piece> isPossibleKingMove(Move move)
 	{
+		//Try to move
+		if(isDirectReachable(new TreeSet<>(), move) && couldStillJump(move.getxPos(), move.getyPos(), new TreeSet<>(), board.getPiece(move.getxPos(), move.getyPos()).getOwner()) == false)
+		{
+			return new TreeSet<>();
+		}
+
 		//Try to jump in all four directions
 		Piece piece = board.getPiece(move.getxPos(), move.getyPos());
 		Owner owner = piece.getOwner();
