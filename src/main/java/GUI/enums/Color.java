@@ -2,5 +2,5 @@ package GUI.enums;
 
 public enum  Color
 {
-    RED, GREEN, BLUE
+    MARKEDCLICKED, MARKEDANOTHEROPTION, VICTIM, DESTINATION
 }

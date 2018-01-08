@@ -2,26 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda81767-1980-4071-b852-ff94412a97e0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/MyImageView.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/enums/Color.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/MyStackPane.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUI/enums/BoardDirection.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/MyImageView.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/PersonGameController.class" afterPath="$PROJECT_DIR$/out/production/classes/GUI/PersonGameController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/artInt/AI.class" afterPath="$PROJECT_DIR$/out/production/classes/artInt/AI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/artInt/RandomAI.class" afterPath="$PROJECT_DIR$/out/production/classes/artInt/RandomAI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/artInt/RekursiveAI.class" afterPath="$PROJECT_DIR$/out/production/classes/artInt/RekursiveAI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gameModel/Game.class" afterPath="$PROJECT_DIR$/out/production/classes/gameModel/Game.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gameModel/MyGame$1.class" afterPath="$PROJECT_DIR$/out/production/classes/gameModel/MyGame$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gameModel/MyGame.class" afterPath="$PROJECT_DIR$/out/production/classes/gameModel/MyGame.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/enums/Color.class" afterPath="$PROJECT_DIR$/out/production/classes/GUI/enums/Color.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/MainApplication.class" afterPath="$PROJECT_DIR$/out/production/classes/MainApplication.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/black.png" afterPath="$PROJECT_DIR$/out/production/resources/boardBackground/black.png" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackBlackKing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackBlackKingBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackBlackKingGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackBlackKingRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackBlackMan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackBlackManBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackBlackManGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackBlackManRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackWhiteKing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackWhiteKingBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackWhiteKingGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackWhiteKingRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackWhiteMan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackWhiteManBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackWhiteManGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/blackWhiteManRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/white.png" afterPath="$PROJECT_DIR$/out/production/resources/boardBackground/white.png" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteBlackKing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteBlackKingBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteBlackKingGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteBlackKingRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteBlackMan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteBlackManBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteBlackManGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteBlackManRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteWhiteKing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteWhiteKingBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteWhiteKingGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteWhiteKingRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteWhiteMan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteWhiteManBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteWhiteManGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/boardBackground/whiteWhiteManRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/MyImageView.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/artInt/AI.java" afterPath="$PROJECT_DIR$/src/main/java/artInt/AI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/artInt/RandomAI.java" afterPath="$PROJECT_DIR$/src/main/java/artInt/RandomAI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java" afterPath="$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameModel/Game.java" afterPath="$PROJECT_DIR$/src/main/java/gameModel/Game.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameModel/MyGame.java" afterPath="$PROJECT_DIR$/src/main/java/gameModel/MyGame.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameModel/board/KingMaster.java" afterPath="$PROJECT_DIR$/src/main/java/gameModel/board/KingMaster.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java" afterPath="$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/myBoardTest/TestAllMoves.java" afterPath="$PROJECT_DIR$/src/test/java/myBoardTest/TestAllMoves.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/myBoardTest/TestManKingJump.java" afterPath="$PROJECT_DIR$/src/test/java/myBoardTest/TestManKingJump.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/enums/Color.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/enums/Color.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainApplication.java" afterPath="$PROJECT_DIR$/src/main/java/MainApplication.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/black.png" afterPath="$PROJECT_DIR$/src/main/resources/boardBackground/black.png" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackKing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackKingBlue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackKingGreen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackKingRed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackMan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackManBlue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackManGreen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackManRed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteKing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteKingBlue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteKingGreen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteKingRed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteMan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteManBlue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteManGreen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteManRed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/white.png" afterPath="$PROJECT_DIR$/src/main/resources/boardBackground/white.png" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteBLUE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackKing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackKingBlue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackKingGreen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackKingRed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackMan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackManBlue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackManGreen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackManRed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteGREEN.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteRED.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteKing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteKingBlue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteKingGreen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteKingRed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteMan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteManBlue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteManGreen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteManRed.png" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -43,17 +114,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestAllMoves.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/myBoardTest/TestAllMoves.java">
+      <file leaf-file-name="PersonGameController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="20" column="75" lean-forward="false" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+            <state relative-caret-position="561">
+              <caret line="175" column="4" lean-forward="false" selection-start-line="175" selection-start-column="4" selection-end-line="175" selection-end-column="4" />
               <folding>
-                <element signature="method#testAllMovesKing#0;class#TestAllMoves#0" expanded="false" />
-                <element signature="method#testAllMovesPiece#0;class#TestAllMoves#0" expanded="false" />
-                <element signature="method#assertAllMoves#0;class#TestAllMoves#0" expanded="false" />
-                <element signature="method#containsThisMoves#0;class#TestAllMoves#0" expanded="false" />
-                <element signature="method#getAllMoves#0;class#TestAllMoves#0" expanded="false" />
+                <element signature="method#PersonGameController#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#show#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#mouseOnField#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#removeMarkers#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#onFieldClicked#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#playerDoMove#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#playerSelectPiece#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#computerPlayerShowNextMove#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#computerPlayerDoMove#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#colorPieces#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#colorMoveDestination#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#refreshBoard#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#clearBoard#0;class#PersonGameController#0" expanded="false" />
+                <element signature="method#toArray#0;class#PersonGameController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -409,23 +489,26 @@
         <option value="$PROJECT_DIR$/src/main/java/model/MyGame.java" />
         <option value="$PROJECT_DIR$/src/test/java/myGameTest/MyGameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/AI/AI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MainApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/AI/RandomAI.java" />
         <option value="$PROJECT_DIR$/src/main/java/AI/RekursiveAI.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/AINotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/StartScreenController.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/MyImageView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/enums/Color.java" />
         <option value="$PROJECT_DIR$/src/main/java/artInt/AI.java" />
         <option value="$PROJECT_DIR$/src/main/java/artInt/RandomAI.java" />
         <option value="$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameModel/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameModel/MyGame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java" />
         <option value="$PROJECT_DIR$/src/test/java/myBoardTest/TestManKingJump.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameModel/board/KingMaster.java" />
         <option value="$PROJECT_DIR$/src/test/java/myBoardTest/TestAllMoves.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MainApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/MyStackView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/enums/Color.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/MyStackPane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/enums/BoardDirection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java" />
       </list>
     </option>
   </component>
@@ -436,8 +519,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="218" />
-    <option name="y" value="-22" />
+    <option name="x" value="97" />
+    <option name="y" value="-13" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -457,6 +540,9 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -464,13 +550,36 @@
               <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
               <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="artInt" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,7 +588,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WordMage0.3" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -750,6 +859,9 @@
       <workItem from="1515179303388" duration="3536000" />
       <workItem from="1515255828131" duration="6626000" />
       <workItem from="1515270292623" duration="2183000" />
+      <workItem from="1515336735323" duration="7498000" />
+      <workItem from="1515415076844" duration="1108000" />
+      <workItem from="1515419499834" duration="3515000" />
     </task>
     <servers />
   </component>
@@ -786,7 +898,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84651000" />
+    <option name="totallyTimeSpent" value="96772000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -809,11 +921,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28941908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14315353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1493776" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15938166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10927505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -821,7 +933,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43775934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2987552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -840,26 +952,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="70" />
+      <option name="time" value="71" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Direction.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/enums/Direction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/enums/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/enums/Owner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -933,13 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/AINotFoundException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/StartScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -958,11 +1048,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackGREEN.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackRED.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackYellow.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackMan.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackMan.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteGREEN.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteRED.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteYellow.png" />
@@ -970,67 +1056,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="1117" column="0" lean-forward="false" selection-start-line="1117" selection-start-column="0" selection-end-line="1117" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteMan.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteKing.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackMan.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackKing.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteMan.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteWhiteKing.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackMan.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/whiteBlackKing.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackBlack.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteKing.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackMan.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/MyImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackKing.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/enums/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackWhiteKing.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackMan.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/blackBlackKing.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,27 +1085,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/MyGame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/AI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding>
-            <element signature="method#MyGame#0;class#MyGame#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyGame#0" expanded="false" />
-            <element signature="method#moveFinished#0;class#MyGame#0" expanded="false" />
-            <element signature="method#gameIsFinished#0;class#MyGame#0" expanded="false" />
-            <element signature="method#endGame#0;class#MyGame#0" expanded="false" />
-            <element signature="method#getAllMovablePieces#0;class#MyGame#0" expanded="false" />
-            <element signature="method#getAllCurrentMoves#0;class#MyGame#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/ManMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="152" column="4" lean-forward="false" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/myBoardTest/TestManKingJump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="70" lean-forward="true" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/KingMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/myBoardTest/TestAllMoves.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/MyImageView.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/boardBackground/black.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/enums/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1077,132 +1169,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/AI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/MyStackPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="306">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/ManMaster.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/enums/BoardDirection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="152" column="4" lean-forward="false" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
-          <folding>
-            <element signature="method#isPossibleManMove#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#isPossibleManJump#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#selectArrayList#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#getManJumpVictimsSearch#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#selectTreeSetSearch#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#couldStillJump#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#getAllNormalMoves#0;class#ManMaster#0" expanded="false" />
-            <element signature="method#getAllJumpMoves#0;class#ManMaster#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        <state relative-caret-position="170">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/myBoardTest/TestManKingJump.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="70" lean-forward="true" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
-          <folding>
-            <element signature="method#testManJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
-            <element signature="method#testManJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
-            <element signature="method#testKingJumpSzenario1#0;class#TestManKingJump#0" expanded="false" />
-            <element signature="method#testKingJumpSzenario2#0;class#TestManKingJump#0" expanded="false" />
-            <element signature="method#assertRightMove#0;class#TestManKingJump#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/MyGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="141" column="57" lean-forward="true" selection-start-line="141" selection-start-column="57" selection-end-line="141" selection-end-column="57" />
+        <state relative-caret-position="561">
+          <caret line="175" column="4" lean-forward="false" selection-start-line="175" selection-start-column="4" selection-end-line="175" selection-end-column="4" />
           <folding>
             <element signature="method#PersonGameController#0;class#PersonGameController#0" expanded="false" />
             <element signature="method#show#0;class#PersonGameController#0" expanded="false" />
-            <element signature="method#toArray#0;class#PersonGameController#0" expanded="false" />
+            <element signature="method#mouseOnField#0;class#PersonGameController#0" expanded="false" />
+            <element signature="method#removeMarkers#0;class#PersonGameController#0" expanded="false" />
             <element signature="method#onFieldClicked#0;class#PersonGameController#0" expanded="false" />
-            <element signature="method#colorMoveDestination#0;class#PersonGameController#0" expanded="false" />
+            <element signature="method#playerDoMove#0;class#PersonGameController#0" expanded="false" />
+            <element signature="method#playerSelectPiece#0;class#PersonGameController#0" expanded="false" />
+            <element signature="method#computerPlayerShowNextMove#0;class#PersonGameController#0" expanded="false" />
+            <element signature="method#computerPlayerDoMove#0;class#PersonGameController#0" expanded="false" />
             <element signature="method#colorPieces#0;class#PersonGameController#0" expanded="false" />
-            <element signature="method#cutFour#0;class#PersonGameController#0" expanded="false" />
-            <element signature="method#appendPng#0;class#PersonGameController#0" expanded="false" />
+            <element signature="method#colorMoveDestination#0;class#PersonGameController#0" expanded="false" />
             <element signature="method#refreshBoard#0;class#PersonGameController#0" expanded="false" />
-            <element signature="method#getPath#0;class#PersonGameController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/KingMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="method#isPossibleKingMove#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#jumpToDestination#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#jumpToDestinationHelp#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#isDirectReachable#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#isOnDiagonale#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#distance#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#getNextStone#0;class#KingMaster#0" expanded="false" />
-            <element signature="class#Position#0;class#KingMaster#0" expanded="false" />
-            <element signature="class#IsCorrectMove#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#couldStillJump#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#getAllJumpMoves#0;class#KingMaster#0" expanded="false" />
-            <element signature="method#getAllNormalMoves#0;class#KingMaster#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#MyBoard#1;class#MyBoard#0" expanded="false" />
-            <element signature="method#getPiece#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllPieces#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllMoves#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllNormalMoves#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#getAllJumpMoves#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#doMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#tryMove#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#clearBoard#0;class#MyBoard#0" expanded="false" />
-            <element signature="method#setOnBoard#0;class#MyBoard#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/myBoardTest/TestAllMoves.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="20" column="75" lean-forward="false" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="method#testAllMovesKing#0;class#TestAllMoves#0" expanded="false" />
-            <element signature="method#testAllMovesPiece#0;class#TestAllMoves#0" expanded="false" />
-            <element signature="method#assertAllMoves#0;class#TestAllMoves#0" expanded="false" />
-            <element signature="method#containsThisMoves#0;class#TestAllMoves#0" expanded="false" />
-            <element signature="method#getAllMoves#0;class#TestAllMoves#0" expanded="false" />
+            <element signature="method#clearBoard#0;class#PersonGameController#0" expanded="false" />
+            <element signature="method#toArray#0;class#PersonGameController#0" expanded="false" />
           </folding>
         </state>
       </provider>
