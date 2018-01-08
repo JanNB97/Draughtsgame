@@ -9,6 +9,11 @@ import java.util.TreeSet;
 
 public class RekursiveAI extends AI
 {
+    public RekursiveAI()
+    {
+        super("RekursiveAI");
+    }
+
     @Override
     public Move getNextMove(Game game)
     {

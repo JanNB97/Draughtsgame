@@ -9,5 +9,17 @@ import java.util.TreeSet;
 
 public abstract class AI
 {
+    public AI(String name)
+    {
+        this.name = name;
+    }
+
+    private String name;
+
     public abstract Move getNextMove(Game game);
+
+    public String getName()
+    {
+        return name;
+    }
 }

@@ -11,6 +11,11 @@ import java.util.TreeSet;
 
 public class RandomAI extends AI
 {
+    public RandomAI()
+    {
+        super("RandomAI");
+    }
+
     @Override
     public Move getNextMove(Game game)
     {

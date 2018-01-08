@@ -10,13 +10,16 @@ import gameModel.Piece;
 import gameModel.enums.Direction;
 import gameModel.enums.Owner;
 import gameModel.enums.Type;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -29,16 +32,21 @@ public class PersonGameController
     private Game game;
     private MyStackPane[][] fields = new MyStackPane[8][8];
     private final BoardDirection boardDirection = BoardDirection.PLAYERSOUTH;
+    private String personName;
 
     private Piece selectedPiece;
     private Move nextMove;
 
+    private Label computerLabel;
+    Label personLabel;
+
     private ArrayList<Piece> markedVictims;
 
-    public PersonGameController(Stage stage, AI computerPlayer)
+    public PersonGameController(Stage stage, AI computerPlayer, String personName)
     {
         this.stage = stage;
         this.computerPlayer = computerPlayer;
+        this.personName = personName;
 
         game = new MyGame();
     }
@@ -47,8 +55,21 @@ public class PersonGameController
     {
         stage.hide();
         stage.show();
+        stage.setX(0);
+        stage.setY(0);
 
         VBox vBox = new VBox();
+        vBox.setAlignment(Pos.CENTER);
+        vBox.setStyle("-fx-background-color: rgb(0,0,0)");
+        computerLabel = new Label(computerPlayer.getName());
+        personLabel = new Label(personName);
+        computerLabel.setFont(new Font(30));
+        computerLabel.setAlignment(Pos.CENTER);
+        computerLabel.setStyle("-fx-text-fill: rgb(255,255,255)");
+        personLabel.setFont(new Font(30));
+        personLabel.setAlignment(Pos.CENTER);
+        personLabel.setStyle("-fx-text-fill: rgb(255,255,255)");
+        vBox.getChildren().add(computerLabel);
 
         for(int i = 0; i < 8; i++)
         {
@@ -74,6 +95,7 @@ public class PersonGameController
 
             vBox.getChildren().add(hBox);
         }
+        vBox.getChildren().add(personLabel);
         refreshBoard();
 
         Scene scene = new Scene(vBox);
@@ -166,7 +188,7 @@ public class PersonGameController
                 playerDoMove(xPos, yPos, direction);
             }
         }
-        else
+        else if(game.getOnTurn() == Owner.NP)
         {
             computerPlayerDoMove();
         }
@@ -182,7 +204,14 @@ public class PersonGameController
             selectedPiece = null;
             refreshBoard();
 
-            computerPlayerShowNextMove();
+            if(game.getWinner() == null)
+            {
+                computerPlayerShowNextMove();
+            }
+            else
+            {
+                finishGame(game.getWinner());
+            }
         }
     }
 
@@ -220,7 +249,14 @@ public class PersonGameController
         refreshBoard();
 
         //Show player his moves
-        colorPieces(Color.MARKEDANOTHEROPTION, toArray(game.getAllMovablePieces()));
+        if(game.getWinner() == null)
+        {
+            colorPieces(Color.MARKEDANOTHEROPTION, toArray(game.getAllMovablePieces()));
+        }
+        else
+        {
+            finishGame(game.getWinner());
+        }
     }
 
     private void colorPieces(Color color, Piece...pieces)
@@ -343,5 +379,17 @@ public class PersonGameController
         }
 
         return allPieces;
+    }
+
+    private void finishGame(Owner winner)
+    {
+        if(winner == Owner.NP)
+        {
+            computerLabel.setText("Winner :" + computerLabel.getText());
+        }
+        else
+        {
+            personLabel.setText("Winner: " + personLabel.getText());
+        }
     }
 }

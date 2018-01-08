@@ -7,8 +7,11 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -18,6 +21,8 @@ public class StartScreenController
 {
     private Stage stage;
 
+    private TextField nameField;
+
     public StartScreenController(Stage stage)
     {
         this.stage = stage;
@@ -25,17 +30,23 @@ public class StartScreenController
 
     public void show()
     {
+        nameField = new TextField("Name");
+        nameField.setFont(new Font(30));
+        nameField.setAlignment(Pos.CENTER);
+
         ComboBox<String> comboBox1 = new ComboBox<>();
         ComboBox<String> comboBox2 = new ComboBox<>();
+        comboBox1.getItems().add("PERSON");
         setComboBox(comboBox1);
         setComboBox(comboBox2);
-        comboBox1.getItems().add("PERSON");
 
-        HBox hBox = new HBox(10, comboBox1, comboBox2);
+        Label label = new Label(" VS. ");
+        HBox hBox = new HBox(10, comboBox1, label, comboBox2);
         hBox.setAlignment(Pos.CENTER);
 
         Button button = new Button("START");
-        VBox vBox = new VBox(20, hBox, button);
+        button.setStyle("-fx-font-size: 30");
+        VBox vBox = new VBox(20, nameField, hBox, button);
         vBox.setAlignment(Pos.CENTER);
 
         button.setOnAction(t -> {
@@ -57,7 +68,7 @@ public class StartScreenController
         {
             AI p2 = getAI(s2);
 
-            PersonGameController personGameController = new PersonGameController(stage, p2);
+            PersonGameController personGameController = new PersonGameController(stage, p2, nameField.getText());
             personGameController.show();
         }
         else
@@ -69,11 +80,11 @@ public class StartScreenController
 
     private AI getAI(String name)
     {
-        if(name.equals("RandomAI.java"))
+        if(name.equals("RandomAI"))
         {
             return new RandomAI();
         }
-        else if(name.equals("RekursiveAI.java"))
+        else if(name.equals("RekursiveAI"))
         {
             return new RekursiveAI();
         }
@@ -90,12 +101,25 @@ public class StartScreenController
         File file = new File("./src/main/java/artInt");
         File[] allFiles = file.listFiles();
 
+        comboBox.setStyle("-fx-font-size: 20");
+        comboBox.setPrefWidth(200);
+
         for(int i = 0; i < allFiles.length; i++)
         {
             if(allFiles[i].getName().equals("AI.java") == false)
             {
-                comboBox.getItems().add(allFiles[i].getName());
+                comboBox.getItems().add(cutFour(allFiles[i].getName()));
             }
         }
+
+        comboBox.getSelectionModel().select(0);
+    }
+
+    private String cutFour(String string)
+    {
+        StringBuilder builder = new StringBuilder(string);
+        builder.delete(string.length() - 5, string.length());
+
+        return builder.toString();
     }
 }
