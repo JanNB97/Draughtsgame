@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda81767-1980-4071-b852-ff94412a97e0" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/artInt/SimpleEvaluationAI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/AITests/SimpleEvaluationAITest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/PersonGameController$1.class" afterPath="$PROJECT_DIR$/out/production/classes/GUI/PersonGameController$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/PersonGameController.class" afterPath="$PROJECT_DIR$/out/production/classes/GUI/PersonGameController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/StartScreenController.class" afterPath="$PROJECT_DIR$/out/production/classes/GUI/StartScreenController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/artInt/AI.class" afterPath="$PROJECT_DIR$/out/production/classes/artInt/AI.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/artInt/RandomAI.class" afterPath="$PROJECT_DIR$/out/production/classes/artInt/RandomAI.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/artInt/RekursiveAI.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/gameModel/board/Board.class" afterPath="$PROJECT_DIR$/out/production/classes/gameModel/board/Board.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/gameModel/board/MyBoard.class" afterPath="$PROJECT_DIR$/out/production/classes/gameModel/board/MyBoard.class" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/StartScreenController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/StartScreenController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/artInt/AI.java" afterPath="$PROJECT_DIR$/src/main/java/artInt/AI.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/artInt/RandomAI.java" afterPath="$PROJECT_DIR$/src/main/java/artInt/RandomAI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java" afterPath="$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameModel/board/Board.java" afterPath="$PROJECT_DIR$/src/main/java/gameModel/board/Board.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java" afterPath="$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -28,45 +40,7 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PersonGameController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#PersonGameController#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#show#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#mouseOnField#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#removeMarkers#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#onFieldClicked#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#playerDoMove#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#playerSelectPiece#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#computerPlayerShowNextMove#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#computerPlayerDoMove#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#colorPieces#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#colorMoveDestination#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#refreshBoard#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#clearBoard#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#toArray#0;class#PersonGameController#0" expanded="false" />
-                <element signature="method#finishGame#0;class#PersonGameController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/MyGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -386,8 +360,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Man.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Person.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/owner.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Man.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/piece.java" />
@@ -422,7 +394,6 @@
         <option value="$PROJECT_DIR$/src/main/java/GUI/MyImageView.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameModel/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameModel/MyGame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java" />
         <option value="$PROJECT_DIR$/src/test/java/myBoardTest/TestManKingJump.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameModel/board/KingMaster.java" />
         <option value="$PROJECT_DIR$/src/test/java/myBoardTest/TestAllMoves.java" />
@@ -431,10 +402,14 @@
         <option value="$PROJECT_DIR$/src/main/java/GUI/enums/Color.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/MyStackPane.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/enums/BoardDirection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/artInt/AI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/artInt/RandomAI.java" />
         <option value="$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/StartScreenController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/artInt/AI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/artInt/RandomAI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gameModel/board/Board.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AITests/SimpleEvaluationAITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/artInt/SimpleEvaluationAI.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java" />
       </list>
     </option>
@@ -445,9 +420,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="97" />
-    <option name="y" value="-13" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="531" />
+    <option name="y" value="163" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -466,6 +441,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -491,14 +470,39 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="AITests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -582,18 +586,18 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="MyGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimpleEvaluationAITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="myGameTest.*" />
+          <option name="PATTERN" value="AITests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Draughtsgame_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="myGameTest" />
-      <option name="MAIN_CLASS_NAME" value="myGameTest.MyGameTest" />
+      <option name="PACKAGE_NAME" value="AITests" />
+      <option name="MAIN_CLASS_NAME" value="AITests.SimpleEvaluationAITest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -719,18 +723,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.myBoardTest in Draughtsgame_test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MyGameTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in Draughtsgame_test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MainApplication" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestAllMoves" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in Draughtsgame_test" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MainApplication" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestAllMoves" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SimpleEvaluationAITest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.MainApplication" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.myBoardTest in Draughtsgame_test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestAllMoves" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in Draughtsgame_test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MyGameTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Draughtsgame_test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SimpleEvaluationAITest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.myBoardTest in Draughtsgame_test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestAllMoves" />
       </list>
     </recent_temporary>
   </component>
@@ -783,43 +787,45 @@
       <workItem from="1515419499834" duration="3515000" />
       <workItem from="1515430581764" duration="2000" />
       <workItem from="1515431456611" duration="3140000" />
+      <workItem from="1515518657776" duration="241000" />
+      <workItem from="1515521350285" duration="7362000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Draughtsgame_test - 2018.01.06 at 21h 50m 28s.xml">
+    <history-entry file="All_in_Draughtsgame_test - 2018.01.09 at 21h 10m 53s.xml">
       <configuration name="All in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAllMoves - 2018.01.06 at 21h 45m 16s.xml">
-      <configuration name="TestAllMoves" configurationId="JUnit" />
+    <history-entry file="All_in_Draughtsgame_test - 2018.01.09 at 21h 11m 06s.xml">
+      <configuration name="All in Draughtsgame_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAllMoves - 2018.01.06 at 21h 49m 40s.xml">
-      <configuration name="TestAllMoves" configurationId="JUnit" />
+    <history-entry file="SimpleEvaluationAITest - 2018.01.09 at 20h 28m 09s.xml">
+      <configuration name="SimpleEvaluationAITest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAllMoves - 2018.01.06 at 21h 49m 45s.xml">
-      <configuration name="TestAllMoves" configurationId="JUnit" />
+    <history-entry file="SimpleEvaluationAITest - 2018.01.09 at 20h 28m 23s.xml">
+      <configuration name="SimpleEvaluationAITest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAllMoves - 2018.01.06 at 21h 50m 34s.xml">
-      <configuration name="TestAllMoves" configurationId="JUnit" />
+    <history-entry file="SimpleEvaluationAITest - 2018.01.09 at 20h 28m 33s.xml">
+      <configuration name="SimpleEvaluationAITest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myBoardTest_in_Draughtsgame_test - 2018.01.06 at 21h 50m 54s.xml">
-      <configuration name="myBoardTest in Draughtsgame_test" configurationId="JUnit" />
+    <history-entry file="SimpleEvaluationAITest - 2018.01.09 at 20h 29m 24s.xml">
+      <configuration name="SimpleEvaluationAITest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myBoardTest_in_Draughtsgame_test - 2018.01.06 at 21h 54m 38s.xml">
-      <configuration name="myBoardTest in Draughtsgame_test" configurationId="JUnit" />
+    <history-entry file="SimpleEvaluationAITest - 2018.01.09 at 20h 30m 37s.xml">
+      <configuration name="SimpleEvaluationAITest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myBoardTest_in_Draughtsgame_test - 2018.01.06 at 21h 55m 04s.xml">
-      <configuration name="myBoardTest in Draughtsgame_test" configurationId="JUnit" />
+    <history-entry file="SimpleEvaluationAITest - 2018.01.09 at 20h 37m 30s.xml">
+      <configuration name="SimpleEvaluationAITest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myBoardTest_in_Draughtsgame_test - 2018.01.06 at 21h 56m 06s.xml">
-      <configuration name="myBoardTest in Draughtsgame_test" configurationId="JUnit" />
+    <history-entry file="SimpleEvaluationAITest - 2018.01.09 at 20h 38m 09s.xml">
+      <configuration name="SimpleEvaluationAITest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="myBoardTest_in_Draughtsgame_test - 2018.01.06 at 21h 56m 37s.xml">
-      <configuration name="myBoardTest in Draughtsgame_test" configurationId="JUnit" />
+    <history-entry file="SimpleEvaluationAITest - 2018.01.09 at 20h 39m 21s.xml">
+      <configuration name="SimpleEvaluationAITest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99914000" />
+    <option name="totallyTimeSpent" value="107517000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,10 +837,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="531" y="163" width="974" height="1087" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4303665" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4294606" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16390042" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -842,19 +848,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28941908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22406639" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10052356" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26695842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2852697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2987552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4512448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -862,7 +869,6 @@
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21887967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27985075" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -873,62 +879,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="74" />
+      <option name="time" value="85" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/enums/Owner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Board.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/MyBoard.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/TreeSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="159" column="18" lean-forward="true" selection-start-line="159" selection-start-column="18" selection-end-line="159" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/enums/KingDirection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="78" lean-forward="false" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Person.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/Piece.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -988,13 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/myBoardTest/TestManKingJump.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1009,24 +957,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/Move.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1071,34 +1005,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/RandomAI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/MyGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/AI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/RekursiveAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="374">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/StartScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+        <state relative-caret-position="323">
+          <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
           <folding>
             <element signature="method#show#0;class#StartScreenController#0" expanded="false" />
             <element signature="method#startButtonClicked#0;class#StartScreenController#0" expanded="false" />
@@ -1109,20 +1028,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/MyGame.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/javafx-src.zip!/javafx/event/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="382">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/RandomAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="method#getNextMove#0;class#RandomAI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+          <folding>
+            <element signature="e#2922#2923#0" expanded="false" />
+            <element signature="e#2966#2967#0" expanded="false" />
+            <element signature="e#10310#10449#0" expanded="false" />
+            <element signature="e#10448#10449#0" expanded="false" />
+            <element signature="e#11040#11204#0" expanded="false" />
+            <element signature="e#11203#11204#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#1464#1658#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/PersonGameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        <state relative-caret-position="1088">
+          <caret line="390" column="4" lean-forward="false" selection-start-line="390" selection-start-column="4" selection-end-line="390" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#PersonGameController#0;class#PersonGameController#0" expanded="false" />
             <element signature="method#show#0;class#PersonGameController#0" expanded="false" />
             <element signature="method#mouseOnField#0;class#PersonGameController#0" expanded="false" />
@@ -1138,6 +1132,58 @@
             <element signature="method#clearBoard#0;class#PersonGameController#0" expanded="false" />
             <element signature="method#toArray#0;class#PersonGameController#0" expanded="false" />
             <element signature="method#finishGame#0;class#PersonGameController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameModel/board/MyBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+          <folding>
+            <element signature="method#toString#0;class#MyBoard#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/SimpleEvaluationAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getNextMove#0;class#SimpleEvaluationAI#0" expanded="false" />
+            <element signature="method#getBestEvaluatedMove#0;class#SimpleEvaluationAI#0" expanded="false" />
+            <element signature="method#evalutateBoard#0;class#SimpleEvaluationAI#0" expanded="false" />
+            <element signature="method#getOtherPlayer#0;class#SimpleEvaluationAI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/AI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#483#484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AITests/SimpleEvaluationAITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

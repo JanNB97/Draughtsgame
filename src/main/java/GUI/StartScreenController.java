@@ -2,7 +2,8 @@ package GUI;
 
 import artInt.AI;
 import artInt.RandomAI;
-import artInt.RekursiveAI;
+import artInt.SimpleEvaluationAI;
+import gameModel.enums.Owner;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -80,13 +81,15 @@ public class StartScreenController
 
     private AI getAI(String name)
     {
+        final Owner playerNumber = Owner.NP;
+
         if(name.equals("RandomAI"))
         {
-            return new RandomAI();
+            return new RandomAI(playerNumber);
         }
-        else if(name.equals("RekursiveAI"))
+        else if(name.equals("SimpleEvaluationAI"))
         {
-            return new RekursiveAI();
+            return new SimpleEvaluationAI(playerNumber);
         }
         else
         {
@@ -102,7 +105,7 @@ public class StartScreenController
         File[] allFiles = file.listFiles();
 
         comboBox.setStyle("-fx-font-size: 20");
-        comboBox.setPrefWidth(200);
+        comboBox.setPrefWidth(300);
 
         for(int i = 0; i < allFiles.length; i++)
         {

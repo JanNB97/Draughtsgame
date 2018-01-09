@@ -236,9 +236,11 @@ public class MyBoard implements Board
 
     //Only if it's a possible move!!!
     @Override
-    public Board tryMove(Move move, TreeSet<Piece> victims)
+    public Board tryMove(Move move)
     {
         Board board = new MyBoard(this);
+
+        TreeSet<Piece> victims = isPossibleMove(move);
 
         board.doMove(move, victims);
 

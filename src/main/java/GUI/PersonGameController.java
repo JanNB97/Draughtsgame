@@ -24,6 +24,7 @@ import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.TreeSet;
+import java.util.logging.Logger;
 
 public class PersonGameController
 {
@@ -231,6 +232,11 @@ public class PersonGameController
         Move move = computerPlayer.getNextMove(game);
         nextMove = move;
 
+        if(move == null)
+        {
+            Logger.getGlobal().severe("Computer player selected no move");
+        }
+
         Piece startPiece = new Piece(null, null, move.getxPos(), move.getyPos());
         Piece endPiece = new Piece(null, null, move.getNewXPos(), move.getNewYPos());
         ArrayList<Piece> computerVictims = new ArrayList<>(game.getBoard().isPossibleMove(move));
@@ -385,7 +391,7 @@ public class PersonGameController
     {
         if(winner == Owner.NP)
         {
-            computerLabel.setText("Winner :" + computerLabel.getText());
+            computerLabel.setText("Winner: " + computerLabel.getText());
         }
         else
         {

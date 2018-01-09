@@ -4,6 +4,7 @@ import gameModel.Game;
 import gameModel.Move;
 import gameModel.Piece;
 import gameModel.board.Board;
+import gameModel.enums.Owner;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -11,20 +12,20 @@ import java.util.TreeSet;
 
 public class RandomAI extends AI
 {
-    public RandomAI()
+    public RandomAI(Owner playerNumber)
     {
-        super("RandomAI");
+        super(playerNumber,"RandomAI");
     }
 
     @Override
-    public Move getNextMove(Game game)
+    public Move getNextMove(Board board)
     {
-        ArrayList<Piece> pieces = game.getAllMovablePieces();
+        ArrayList<ArrayList<Move>> moves = board.getAllMoves(getPlayerNumber());
 
         Random random = new Random();
-        int i = random.nextInt(pieces.size());
+        int i = random.nextInt(moves.size());
 
-        ArrayList<Move> allMoves = game.getAllCurrentMoves(pieces.get(i));
+        ArrayList<Move> allMoves = moves.get(i);
 
         int j = random.nextInt(allMoves.size());
 

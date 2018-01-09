@@ -16,7 +16,7 @@ public interface Board
 
     TreeSet<Piece> isPossibleMove(Move move);
     void doMove(Move move, TreeSet<Piece> victims);
-    Board tryMove(Move move, TreeSet<Piece> victims);
+    Board tryMove(Move move);
 
     String toString();
 }
