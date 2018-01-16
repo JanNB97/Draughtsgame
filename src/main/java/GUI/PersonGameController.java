@@ -10,6 +10,7 @@ import gameModel.Piece;
 import gameModel.enums.Direction;
 import gameModel.enums.Owner;
 import gameModel.enums.Type;
+import javafx.application.Platform;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -229,23 +230,38 @@ public class PersonGameController
 
     private void computerPlayerShowNextMove()
     {
-        Move move = computerPlayer.getNextMove(game);
-        nextMove = move;
-
-        if(move == null)
+        new Thread(new Runnable()
         {
-            Logger.getGlobal().severe("Computer player selected no move");
-        }
+            @Override
+            public void run()
+            {
+                Move move = computerPlayer.getNextMove(game);
+                nextMove = move;
 
-        Piece startPiece = new Piece(null, null, move.getxPos(), move.getyPos());
-        Piece endPiece = new Piece(null, null, move.getNewXPos(), move.getNewYPos());
-        ArrayList<Piece> computerVictims = new ArrayList<>(game.getBoard().isPossibleMove(move));
 
-        refreshBoard();
-        colorPieces(Color.MARKEDCLICKED, startPiece);
-        colorPieces(Color.MARKEDANOTHEROPTION, startPiece);
-        colorPieces(Color.DESTINATION, endPiece);
-        colorPieces(Color.VICTIM, toArray(computerVictims));
+                Platform.runLater(new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        if(move == null)
+                        {
+                            Logger.getGlobal().severe("Computer player selected no move");
+                        }
+
+                        Piece startPiece = new Piece(null, null, move.getxPos(), move.getyPos());
+                        Piece endPiece = new Piece(null, null, move.getNewXPos(), move.getNewYPos());
+                        ArrayList<Piece> computerVictims = new ArrayList<>(game.getBoard().isPossibleMove(move));
+
+                        refreshBoard();
+                        colorPieces(Color.MARKEDCLICKED, startPiece);
+                        colorPieces(Color.MARKEDANOTHEROPTION, startPiece);
+                        colorPieces(Color.DESTINATION, endPiece);
+                        colorPieces(Color.VICTIM, toArray(computerVictims));
+                    }
+                });
+            }
+        }).start();
     }
 
     private void computerPlayerDoMove()

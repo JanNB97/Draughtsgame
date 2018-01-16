@@ -15,6 +15,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import javax.swing.*;
 import java.io.File;
 import java.util.logging.Logger;
 
@@ -31,55 +32,55 @@ public class StartScreenController
 
     public void show()
     {
+        Label titel = new Label("Checkers");
+        titel.setFont(new Font(25));
+
         nameField = new TextField("Name");
-        nameField.setFont(new Font(30));
+        nameField.setFont(new Font(20));
         nameField.setAlignment(Pos.CENTER);
-
-        ComboBox<String> comboBox1 = new ComboBox<>();
         ComboBox<String> comboBox2 = new ComboBox<>();
-        comboBox1.getItems().add("PERSON");
-        setComboBox(comboBox1);
         setComboBox(comboBox2);
-
         Label label = new Label(" VS. ");
-        HBox hBox = new HBox(10, comboBox1, label, comboBox2);
+        HBox hBox = new HBox(10, nameField, label, comboBox2);
         hBox.setAlignment(Pos.CENTER);
 
         Button button = new Button("START");
         button.setStyle("-fx-font-size: 30");
-        VBox vBox = new VBox(20, nameField, hBox, button);
+        button.setOnAction(t -> {
+            startButtonClicked(comboBox2.getValue());
+        });
+        Button arenaButton = new Button("ARENA");
+        arenaButton.setOnAction(t -> {
+            arenaButtonClicked();
+        });
+        arenaButton.setFont(new Font(15));
+        HBox arenaBox = new HBox(10, arenaButton);
+        arenaBox.setAlignment(Pos.BOTTOM_RIGHT);
+        VBox buttonVBox = new VBox(button, arenaBox);
+        buttonVBox.setAlignment(Pos.CENTER);
+
+        VBox vBox = new VBox(20, titel, hBox, buttonVBox);
         vBox.setAlignment(Pos.CENTER);
 
-        button.setOnAction(t -> {
-            startButtonClicked(comboBox1.getValue(), comboBox2.getValue());
-        });
+
 
         Scene scene = new Scene(vBox);
         stage.setScene(scene);
         stage.show();
     }
 
-    private void startButtonClicked(String s1, String s2)
+    private void startButtonClicked(String s)
     {
-        if(s1 == null || s2 == null)
-        {
-            return;
-        }
-        else if(s1.equals("PERSON"))
-        {
-            AI p2 = getAI(s2);
+        AI p2 = getAI(s);
 
-            PersonGameController personGameController = new PersonGameController(stage, p2, nameField.getText());
-            personGameController.show();
-        }
-        else
-        {
-            AI p1 = getAI(s1);
-            AI p2 = getAI(s2);
+        PersonGameController personGameController = new PersonGameController(stage, p2, nameField.getText());
+        personGameController.show();
+    }
 
-            ArenaGameController arenaGameController = new ArenaGameController(stage);
-            arenaGameController.show();
-        }
+    private void arenaButtonClicked()
+    {
+        ArenaGameController arenaGameController = new ArenaGameController(stage);
+        arenaGameController.show();
     }
 
     public static AI getAI(String name)
