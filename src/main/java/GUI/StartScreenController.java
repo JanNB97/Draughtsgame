@@ -74,12 +74,15 @@ public class StartScreenController
         }
         else
         {
-            //TODO
-            Logger.getGlobal().severe("Arena is not yet implemented");
+            AI p1 = getAI(s1);
+            AI p2 = getAI(s2);
+
+            ArenaGameController arenaGameController = new ArenaGameController(stage, p1, p2);
+            arenaGameController.show();
         }
     }
 
-    private AI getAI(String name)
+    public static AI getAI(String name)
     {
         final Owner playerNumber = Owner.NP;
 
@@ -99,7 +102,7 @@ public class StartScreenController
         }
     }
 
-    private void setComboBox(ComboBox<String> comboBox)
+    public static void setComboBox(ComboBox<String> comboBox)
     {
         File file = new File("./src/main/java/artInt");
         File[] allFiles = file.listFiles();
@@ -118,7 +121,7 @@ public class StartScreenController
         comboBox.getSelectionModel().select(0);
     }
 
-    private String cutFour(String string)
+    private static String cutFour(String string)
     {
         StringBuilder builder = new StringBuilder(string);
         builder.delete(string.length() - 5, string.length());

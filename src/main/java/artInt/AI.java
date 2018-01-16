@@ -36,4 +36,9 @@ public abstract class AI
     {
         return playerNumber;
     }
+
+    public void setPlayerNumber(Owner playerNumber)
+    {
+        this.playerNumber = playerNumber;
+    }
 }
