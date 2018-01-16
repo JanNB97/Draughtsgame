@@ -77,7 +77,7 @@ public class StartScreenController
             AI p1 = getAI(s1);
             AI p2 = getAI(s2);
 
-            ArenaGameController arenaGameController = new ArenaGameController(stage, p1, p2);
+            ArenaGameController arenaGameController = new ArenaGameController(stage);
             arenaGameController.show();
         }
     }

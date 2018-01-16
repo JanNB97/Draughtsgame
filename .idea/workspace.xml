@@ -4,12 +4,8 @@
     <list default="true" id="eda81767-1980-4071-b852-ff94412a97e0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/ArenaGameController.class" afterPath="$PROJECT_DIR$/out/production/classes/GUI/ArenaGameController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/PersonGameController.class" afterPath="$PROJECT_DIR$/out/production/classes/GUI/PersonGameController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/StartScreenController.class" afterPath="$PROJECT_DIR$/out/production/classes/GUI/StartScreenController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/artInt/AI.class" afterPath="$PROJECT_DIR$/out/production/classes/artInt/AI.class" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/ArenaGameController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/ArenaGameController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/StartScreenController.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/StartScreenController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/artInt/AI.java" afterPath="$PROJECT_DIR$/src/main/java/artInt/AI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,6 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Draughtsgame$MainApplication.coverage" NAME="MainApplication Coverage Results" MODIFIED="1516128891575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Draughtsgame$TestMyBoard.coverage" NAME="TestMyBoard Coverage Results" MODIFIED="1514974994287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExternalProjectsData">
@@ -34,14 +31,15 @@
       <file leaf-file-name="ArenaGameController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/ArenaGameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="77" column="36" lean-forward="false" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+            <state relative-caret-position="333">
+              <caret line="88" column="5" lean-forward="true" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#ArenaGameController#0;class#ArenaGameController#0" expanded="false" />
+                <element signature="method#show#0;class#ArenaGameController#0" expanded="false" />
                 <element signature="method#handleOnBattleButtonClicked#0;class#ArenaGameController#0" expanded="false" />
                 <element signature="method#playOneBattle#0;class#ArenaGameController#0" expanded="false" />
                 <element signature="method#printBattle#0;class#ArenaGameController#0" expanded="false" />
+                <element signature="method#refreshResultArea#0;class#ArenaGameController#0" expanded="false" />
                 <element signature="method#calcProgress#0;class#ArenaGameController#0" expanded="false" />
                 <element signature="method#playOneGame#0;class#ArenaGameController#0" expanded="false" />
               </folding>
@@ -429,8 +427,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="55" />
+    <option name="y" value="-18" />
     <option name="width" value="964" />
     <option name="height" value="1087" />
   </component>
@@ -449,8 +448,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -480,37 +480,13 @@
               <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
               <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="artInt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Draughtsgame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Draughtsgame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -801,6 +777,8 @@
       <workItem from="1515778230239" duration="1192000" />
       <workItem from="1515862840602" duration="35000" />
       <workItem from="1516031073638" duration="8180000" />
+      <workItem from="1516122727822" duration="410000" />
+      <workItem from="1516125958736" duration="4949000" />
     </task>
     <servers />
   </component>
@@ -837,7 +815,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117771000" />
+    <option name="totallyTimeSpent" value="123130000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -849,37 +827,37 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="964" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12033195" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16335079" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16286308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33193716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28941908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14315353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27985075" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121681415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10074627" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39057592" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3900415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21887967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27985075" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2852697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -891,7 +869,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="89" />
+      <option name="time" value="90" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1010,13 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/RandomAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1091,7 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,22 +1097,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/ComboBoxManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/ComboBoxManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/artInt/RandomAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="238">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/StartScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="109" column="7" lean-forward="true" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
           <folding>
             <element signature="method#show#0;class#StartScreenController#0" expanded="false" />
             <element signature="method#startButtonClicked#0;class#StartScreenController#0" expanded="false" />
             <element signature="method#getAI#0;class#StartScreenController#0" expanded="false" />
+            <element signature="method#setComboBox#0;class#StartScreenController#0" expanded="false" />
             <element signature="method#cutFour#0;class#StartScreenController#0" expanded="false" />
           </folding>
         </state>
@@ -1150,14 +1122,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/ArenaGameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="77" column="36" lean-forward="false" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+        <state relative-caret-position="333">
+          <caret line="88" column="5" lean-forward="true" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#ArenaGameController#0;class#ArenaGameController#0" expanded="false" />
+            <element signature="method#show#0;class#ArenaGameController#0" expanded="false" />
             <element signature="method#handleOnBattleButtonClicked#0;class#ArenaGameController#0" expanded="false" />
             <element signature="method#playOneBattle#0;class#ArenaGameController#0" expanded="false" />
             <element signature="method#printBattle#0;class#ArenaGameController#0" expanded="false" />
+            <element signature="method#refreshResultArea#0;class#ArenaGameController#0" expanded="false" />
             <element signature="method#calcProgress#0;class#ArenaGameController#0" expanded="false" />
             <element signature="method#playOneGame#0;class#ArenaGameController#0" expanded="false" />
           </folding>
