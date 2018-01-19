@@ -7,6 +7,7 @@ import gameModel.board.Board;
 import gameModel.enums.Owner;
 
 import java.util.TreeSet;
+import java.util.logging.Logger;
 
 public abstract class AI
 {
@@ -35,6 +36,23 @@ public abstract class AI
     public Owner getPlayerNumber()
     {
         return playerNumber;
+    }
+
+    public Owner getOpponentNumber()
+    {
+        if(playerNumber == Owner.PERSON)
+        {
+            return Owner.NP;
+        }
+        else if(playerNumber == Owner.NP)
+        {
+            return Owner.PERSON;
+        }
+        else
+        {
+            Logger.getGlobal().severe("No owner selected");
+            return null;
+        }
     }
 
     public void setPlayerNumber(Owner playerNumber)

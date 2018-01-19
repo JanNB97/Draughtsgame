@@ -1,8 +1,6 @@
 package GUI;
 
-import artInt.AI;
-import artInt.RandomAI;
-import artInt.SimpleEvaluationAI;
+import artInt.*;
 import gameModel.enums.Owner;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -21,6 +19,37 @@ import java.util.logging.Logger;
 
 public class StartScreenController
 {
+    //Insert new AIs here
+    public static AI getAI(String name)
+    {
+        final Owner playerNumber = Owner.NP;
+
+        if(name.equals("RandomAI"))
+        {
+            return new RandomAI(playerNumber);
+        }
+        else if(name.equals("SimpleEvaluationAI"))
+        {
+            return new SimpleEvaluationAI(playerNumber);
+        }
+        else if(name.equals("SimpleEvaluationAI2"))
+        {
+            return new SimpleEvaluationAI2(playerNumber);
+        }
+        else if(name.equals("RekursiveAI"))
+        {
+            return new RekursiveAI(playerNumber);
+        }
+        else
+        {
+            Logger.getGlobal().severe("artInt not found");
+            System.exit(1);
+            return null;
+        }
+    }
+
+    //==========================================================================
+
     private Stage stage;
 
     private TextField nameField;
@@ -81,26 +110,6 @@ public class StartScreenController
     {
         ArenaGameController arenaGameController = new ArenaGameController(stage);
         arenaGameController.show();
-    }
-
-    public static AI getAI(String name)
-    {
-        final Owner playerNumber = Owner.NP;
-
-        if(name.equals("RandomAI"))
-        {
-            return new RandomAI(playerNumber);
-        }
-        else if(name.equals("SimpleEvaluationAI"))
-        {
-            return new SimpleEvaluationAI(playerNumber);
-        }
-        else
-        {
-            Logger.getGlobal().severe("artInt not found");
-            System.exit(1);
-            return null;
-        }
     }
 
     public static void setComboBox(ComboBox<String> comboBox)

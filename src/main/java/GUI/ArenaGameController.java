@@ -1,15 +1,11 @@
 package GUI;
 
 import artInt.AI;
-import artInt.RandomAI;
-import artInt.SimpleEvaluationAI;
 import gameModel.Game;
 import gameModel.Move;
 import gameModel.MyGame;
 import gameModel.enums.Owner;
 import javafx.application.Platform;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -17,10 +13,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
-import java.io.File;
-import java.util.logging.Logger;
 
 public class ArenaGameController
 {
@@ -114,14 +106,13 @@ public class ArenaGameController
                 {
                     if(i % 2 == 0)
                     {
+
                         Owner winner = playOneGame(P1, P2);
 
-                        if(winner == Owner.PERSON)
+                        if (winner == Owner.PERSON)
                         {
                             pointsPlayer1[0]++;
-                        }
-                        else
-                        {
+                        } else {
                             pointsPlayer2[0]++;
                         }
                     }
@@ -129,18 +120,14 @@ public class ArenaGameController
                     {
                         Owner winner = playOneGame(P2, P1);
 
-                        if(winner == Owner.PERSON)
+                        if (winner == Owner.PERSON)
                         {
                             pointsPlayer2[0]++;
-                        }
-                        else
-                        {
+                        } else {
                             pointsPlayer1[0]++;
                         }
                     }
                 }
-
-
 
                 Platform.runLater(new Runnable()
                 {

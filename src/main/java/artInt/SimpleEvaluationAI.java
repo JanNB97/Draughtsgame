@@ -1,5 +1,6 @@
 package artInt;
 
+import AIHelp.BoardEvaluator;
 import gameModel.Game;
 import gameModel.Move;
 import gameModel.Piece;
@@ -49,7 +50,7 @@ public class SimpleEvaluationAI extends AI
 
                 Board boardPlayerMoves = boardMove.tryMove(bestMovePlayer);
 
-                int evaluation = evalutateBoard(boardPlayerMoves, getPlayerNumber());
+                int evaluation = BoardEvaluator.evalutateBoard(boardPlayerMoves, getPlayerNumber(), KingMULT, OwnMULT);
 
                 if(evaluation > bestEvaluation)
                 {
@@ -86,7 +87,7 @@ public class SimpleEvaluationAI extends AI
             {
                 Board boardMove = board.tryMove(move);
 
-                int evaluation = evalutateBoard(boardMove, player);
+                int evaluation = BoardEvaluator.evalutateBoard(boardMove, player, KingMULT, OwnMULT);
 
                 if(evaluation > bestEvaluation)
                 {
@@ -108,53 +109,6 @@ public class SimpleEvaluationAI extends AI
         }
 
         return bestMove;
-    }
-
-    private int evalutateBoard(Board board, Owner player)
-    {
-        final int POINT = 8;
-
-        int evaluation = 12*POINT + 12*KingMULT*POINT;
-
-        for(int i = 0; i < 8; i++)
-        {
-            for(int j = 0; j < 8; j++)
-            {
-                Piece piece = board.getPiece(i, j);
-
-                if(piece != null)
-                {
-                    if(piece.getType() == Type.MAN)
-                    {
-                        if(piece.getOwner() == player)
-                        {
-                            //Own stone
-                            evaluation += OwnMULT*POINT;
-                        }
-                        else
-                        {
-                            //Opponents stone
-                            evaluation -= POINT;
-                        }
-                    }
-                    else if(piece.getType() == Type.KING)
-                    {
-                        if(piece.getOwner() == player)
-                        {
-                            //Own stone
-                            evaluation += OwnMULT * KingMULT * POINT;
-                        }
-                        else
-                        {
-                            //Opponents stone
-                            evaluation -= KingMULT * POINT;
-                        }
-                    }
-                }
-            }
-        }
-
-        return evaluation;
     }
 
     private Owner getOtherPlayer(Owner player)
